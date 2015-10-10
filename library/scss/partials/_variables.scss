@@ -23,7 +23,7 @@ $alert-green:       #e6efc2;
 $alert-blue:        #d5edf8;
 
 $black:             #323944;
-$white:             #fff;
+$white:             red;
 
 $light-gray:        #f8f9fa;
 $gray:              #eaedf2;
@@ -44,8 +44,23 @@ $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
 
 
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
+// GOH COLOR PARLETTE
+$primary: #7f56c5;
+$white: #ffffff;
+$menu-bg: #f7f7f7;
+$page-bg: #f2f2f3;
+$regular: #8b83d6;
+$light: #a9a3df;
+$red-purple: #9364cc;
+$bright-purple: #c8c5ff;
+$dark: #7947a5;
+$pale-grey: #e3e6f2;
+$pale-red-pruple: #e4d8f2;
+$pale-purple: #cfcaed;
+$bg-pink: #ffebf3;
+$bg-light-blue: #f0f5ff;
+$bg-blue-60: rgba(240, 245, 255, 0.6);
+$bg-pink-60: rgba(255, 235, 243, 0.6);
+$bg-white-60: rgba(255, 255, 255, 0.6);
+$pale-lavender: #f6eeff;
+$heavy: #5d0c8b;
