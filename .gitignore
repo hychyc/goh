@@ -1,23 +1,34 @@
-.htaccess
-.htpasswd
 
-# tmp files and other stuff
-*.patch
-*.diff
-*.orig
-*.rej
-interdiff*.txt
-# emacs artifacts.
-*~
-\#*\#
-# Hidden files.
-.DS*
-# Windows links.
-*.lnk
-# Temporary files.
-tmp*
+# Packages #
+############
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
 .DS_Store
-# codekit
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# codekit #
+###########
+.sass-cache/
+.codekit-config.json
 config.codekit
-
-
