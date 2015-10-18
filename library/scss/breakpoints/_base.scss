@@ -154,6 +154,10 @@ HEADER STYLES
 
 .header {
 	background-color: $black;
+	.header__logo{
+		max-width: 278px;
+		height: auto;
+	}
 }
 
 	#logo {
