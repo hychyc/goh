@@ -17,12 +17,13 @@ GENERAL STYLES
 
 body {
 	font-family: $lato;
-	font-size: 100%;
+	font-size: 12px;
 	line-height: 1.5;
 	color: $text-color;
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+  	color:$primary;
 }
 
 /********************
@@ -71,7 +72,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -121,53 +122,265 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
-h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
-}
-
-h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
-}
-
-h3, .h3 {
-	font-size: 1.125em;
-}
-
-h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
-}
-
-h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
 
 /*********************
 HEADER STYLES
 *********************/
-
 .header {
-	background-color: $black;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index:5;
+	width: 100%;
+	.header__top{
+		background-color: $white;
+		padding-bottom: 10px;
+	}
+	.header__hotline{
+		text-transform: uppercase;
+	}
 	.header__logo{
+		width: 100%;
 		max-width: 278px;
 		height: auto;
+		margin-top: 20px;
+		margin-left: 20px;
+		//padding: 25px 20px;
+	}
+	.header__language{
+		width: 25px;
+		height: auto;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
+	.header__menu-icon{
+		@extend .purple-bg;
+		margin-right: 20px;
+		margin-top: 10px;
+		text-transform: uppercase;
 	}
 }
-
-	#logo {
-		margin: 0.75em 0;
-
-		a {
-			color: $white;
+/*********************
+Maowei CUSTOM STYLES
+*********************/
+//BEM structure
+.donate{
+	text-transform: uppercase;
+	font-size: 1.2em;
+	.donate__icon{
+		width: 21px;
+	}
+}
+.donate--large{
+	@extend .donate;
+	padding:10px 0;
+	text-align: center;
+	width: 100%;
+	margin-bottom:$gap;
+}
+.hotline--large{
+	padding:10px 0;
+	text-align: center;
+	width: 100%;
+	margin-bottom:$gap/2;
+	background-color: $regular;
+	color:$white;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	@include transition();
+	&:hover, &:focus {
+		color:$white;
+		background-color:$primary; 
+		text-decoration: none;
+	}
+}
+.icon-fb{
+	width:30px;
+	height: auto;
+	margin-bottom:$gap;
+}
+.text-box{
+	text-align: center;
+	color:$regular;
+	border-top:1px solid $regular;
+	border-bottom:1px solid $regular;
+	padding: $gap;
+	margin-bottom: $gap;
+	.text-box__title{
+		font-family: $serif;
+		font-size: 2em;
+		margin:0;
+		line-height: 1em;
+		margin-top: 5px;
+	}
+	.text-box__subtitle{
+		font-family: $sans-serif;
+		font-size: 1.6em;
+		margin:0;
+		line-height: 1em;
+		margin-bottom: 20px;
+	}
+	.text-box__caption{
+		font-size: 1em;
+		text-align: left;
+	}
+}
+.media-box{
+	text-align: center;
+	margin-bottom: $gap;
+	padding: 0;
+	background-color: $white;
+	.media-box__img{
+		width: 100%;
+		height: auto;
+	}
+	.media-box__title{
+		@extend .purple-border;
+		width: 80%;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		margin: 1em 0;
+	}
+}
+.event-box{
+	padding: 0;
+	margin-bottom: $gap;
+	background-color: $white;
+	font-family: $sans-serif;
+	.event-box__top{
+		position: relative;
+		.event-box__top__img{
+			position: relative;
+			width: 100%;
+			height: auto;
+		}
+		.event-box__top__badge{
+			top:1em;
+			left: 1em;
+			width: 61px;
+			height: auto;
+			position: absolute;
+		}
+		.event-box__top__date{
+			position:absolute;
+			font-size :3em;
+			bottom: 0.33em;
+			right: 0.33em;
+			margin: 0;
+			text-transform: uppercase;
+			
+			color: $primary;
+			font-weight: 200;
+			width: 150px;
+			text-align: right;
 		}
 	}
-
+	.event-box__bottom{
+		text-decoration: none;
+		display: block;
+		padding:0 13px;
+		.event-box__bottom__title{
+			font-size: 2em;
+			color: $primary;
+			font-weight: 200;
+			font-style: italic;
+			text-transform: uppercase;
+			width: 80%;
+			margin:0.5em 0 0.2em 0;
+		}
+		.event-box__bottom__caption{
+			color:$regular;
+			width: 80%;
+		}
+		.event-box__bottom__arrow{
+			width: 23px;
+			height: auto;
+			position: absolute;
+			bottom:1em;
+			right:1.5em;
+			@include transition(100ms);
+		}
+		&:hover,&:focus {
+			.event-box__bottom__arrow{
+				right:1em;
+			}
+		}
+	}
+}
+.img-box{
+	text-align: center;
+	.img-box__title{
+		font-size: 2em;
+		color: $primary;
+		font-weight:lighter;
+		text-transform: uppercase;
+		text-align: center;
+		margin:10px 0 20px 0;
+	}
+	.img-box__img{
+		width: 100%;
+		height: auto;
+		margin-bottom: $gap;
+	}
+}
+//slideshow
+.slider{
+	margin: 0 50px;
+}
+.slick-dots{
+	display: none!important;
+}
+//general use
+.divider{
+	width: 50px;
+	height: 1px;
+	background-color: $primary;
+	margin: 30px auto 10px auto;
+}
+.block{
+	margin: $gap;
+}
+.purple-bg{
+	display: inline-block;
+	background-color: $primary;
+	color:$white;
+	border:1px solid $primary;
+	padding: 5px 10px;
+}
+.purple-border{
+	display: inline-block;
+	border:1px solid $primary;
+	color:$primary;
+	padding: 5px 10px;
+	@include transition();
+	text-decoration: none;
+	&:hover, &:focus {
+		@extend .purple-bg;
+		text-decoration: none;
+	}
+}
+//js use
+.js-nav{
+	visibility: hidden;
+  	opacity: 0;
+  	@include transition();
+  	height: 0;
+  	&.visible{
+		visibility: visible;
+  		display: block;
+  		height: auto;
+  		opacity: 1;
+	}
+}
+.js-top{
+	width: 50px;
+	height: auto;
+	margin-bottom:$gap;
+	cursor: pointer;
+	@include transition(100ms);
+	&:hover, &:focus {
+	}
+}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -179,19 +392,23 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-
 .nav {
 	border-bottom: 0;
 	margin: 0;
-
+	background-color: $menu-bg;
 	li {
-
+		text-align: center;
 		a {
 			display: block;
-			color: $white;
+			color: $primary;
 			text-decoration: none;
-			padding: 0.75em;
-
+			padding: 0.5em 0.75em;
+			font-size: 1.2em;
+			text-align: center;
+			text-transform: uppercase;
+			display: inline-block;
+			margin: 0.3em 0;
+			@include transition();
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -199,7 +416,8 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				background-color: $primary;
+				color:$white;
 			}
 		}
 
@@ -244,7 +462,10 @@ and more scalable.
 	li.current_page_item,
 	li.current_page_ancestor {
 
-		a {}
+		a {
+			background-color: $primary;
+			color:$white;
+		}
 
 	}  /* end current highlighters */
 
@@ -256,14 +477,14 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	//margin-top: 1.5em;
 }
 
 		.hentry {
-			background-color: $white;
+			background-color: $page-bg;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -866,8 +1087,20 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
-	color: $light-gray;
+	background-color: $red-purple;
+	color: $white;
+	.footer__logo{
+		width: 158px;
+		height: auto;
+		margin: $gap/2 0;
+	}
+	.footer__detail{
+		margin: $gap/2 0;
+	}
+	.footer__copyright{
+		font-size: 0.9em;
+		margin: 0;
+	}
 }
 
 	/*

@@ -1,8 +1,13 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer text-center" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
-
-					<nav role="navigation">
+				<div id="inner-footer" class="wrap">
+					<img class="footer__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/whiteLogo@2x.png">
+					<div class="footer__detail">
+						Phone:   718-321-8862 <br/>
+						Fax:   718-321-1468 <br/>
+						P.O. Box 520048,  Flushing, NY 11352 <br/>  
+					</div>
+					<nav role="navigation" class="hidden-xs">
 						<?php wp_nav_menu(array(
     					'container' => 'div',                           // enter '' to remove nav container (just make sure .footer-links in _base.scss isn't wrapping)
     					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
@@ -18,7 +23,7 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org footer__copyright">&copy; <?php echo date('Y'); ?> by Garden of Hope New York, all rights reserved.</p>
 
 				</div>
 

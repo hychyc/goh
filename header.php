@@ -30,16 +30,17 @@
             <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
-		<?php // wordpress head functions ?>
-		<?php wp_head(); ?>
-		<?php // end of wordpress head ?>
 		<!-- bootstrap-->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		
+		<?php // wordpress head functions ?>
+		<?php wp_head(); ?>
+		<?php // end of wordpress head ?>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- end of bootstrap-->
+		
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
@@ -51,16 +52,35 @@
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
-				<div id="inner-header" class="wrap cf">
-
+				<div id="inner-header" class="wrap">
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo@2x.png">
+					<div class="header__top">
+						<div class="row text-center">
+							<div class="header__hotline">
+								<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8">
+								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo@2x.png"></a>
+							</div>
+							<div class="col-xs-4 text-right">
+								<a href="<?php echo home_url(); ?>" class="clearfix">
+									<img class="header__language" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_cn.png">
+								</a>
+								<a href="#"  class="clearfix">
+									<div class="header__menu-icon js-nav-toggle">menu</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="js-nav">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
