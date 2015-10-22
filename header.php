@@ -65,12 +65,25 @@
 								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo@2x.png"></a>
 							</div>
 							<div class="col-xs-4 text-right">
+								<!--for mobile-->
 								<a href="<?php echo home_url(); ?>" class="clearfix">
 									<img class="header__language" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_cn.png">
 								</a>
 								<a href="#"  class="clearfix">
 									<div class="header__menu-icon js-nav-toggle">menu</div>
 								</a>
+								<!--end for mobile-->
+								<!--for desktop-->
+								<a class="donate purple-border hidden-xs">
+									<span>
+										<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
+									</span>
+									donate
+								</a>
+								<div class="header__hotline hidden-xs">
+									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+								</div>
+								<!--end for desktop-->
 							</div>
 						</div>
 					</div>

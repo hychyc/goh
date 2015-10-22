@@ -24,6 +24,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
+	max-width: 960px;
 	width: 760px;
 }
 
@@ -31,24 +32,59 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.header {}
+.header {
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index:5;
+	width: 100%;
+	.header__top{
+		background-color: $white;
+		padding-bottom: 10px;
+	}
+	.header__hotline{
+		text-transform: uppercase;
+		display: none;
+	}
+	.header__logo{
+		margin: 40px 0 10px 20px;
+		//padding: 25px 20px;
+	}
+	.header__language{
+		display:none;
+	}
+	.header__menu-icon{
+		display: none;
+	}
+}
 
 	#logo {}
-
+/*********************
+Maowei CUSTOM STYLES
+*********************/
+.js-nav{
+	visibility: visible;
+  	opacity: 1;
+  	@include transition();
+  	height: auto;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
-
+.top-nav{
+	text-align: center;
+}
 .nav {
 	border: 0;
+	background-color:$white;
 	ul {
 		background:$black;
 		margin-top:0;
 	}
 	li {
-		float: left;
+		display: inline-block;
 		position: relative;
-
+		padding: 0 5px;
 		a {
 			border-bottom: 0;
 
