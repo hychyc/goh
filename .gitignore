@@ -29,6 +29,19 @@ Thumbs.db
 
 # codekit #
 ###########
-.sass-cache/
 .codekit-config.json
 config.codekit
+.codekit-cache
+
+# sass
+###########
+*.sass-cache
+.sass-cache
+*.css.map
+
+
+# sftp #
+###########
+*/sftp-config.json
+*sftp-config.json
+sftp-config.json

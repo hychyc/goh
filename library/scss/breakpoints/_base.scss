@@ -82,6 +82,7 @@ LINK STYLES
 
 a, a:visited {
 	color: $link-color;
+	cursor: pointer;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -132,6 +133,8 @@ HEADER STYLES
 	left: 0;
 	z-index:5;
 	width: 100%;
+	background-color : $white;
+
 	.header__top{
 		background-color: $white;
 		padding-bottom: 10px;
@@ -418,6 +421,7 @@ and more scalable.
 			&:hover, &:focus {
 				background-color: $primary;
 				color:$white;
+				text-decoration: none;
 			}
 		}
 
@@ -441,7 +445,9 @@ and more scalable.
 					padding-left: 30px;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						text-decoration: none;
+					}
 
 					&:link {}
 
@@ -465,6 +471,8 @@ and more scalable.
 		a {
 			background-color: $primary;
 			color:$white;
+			text-decoration: none;
+
 		}
 
 	}  /* end current highlighters */
@@ -959,7 +967,7 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
+		// @extend .blue-btn;
 		font-size: 0.9em;
 		float: right;
 
@@ -1015,7 +1023,7 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
+		// @extend .blue-btn;
 		float: right;
 		font-size: 1em;
 	}
