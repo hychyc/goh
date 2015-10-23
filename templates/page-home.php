@@ -49,7 +49,7 @@
 										</p>
 									</div>
 									<div class="col-xs-12 text-center">
-										<a href=""><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/fb@2x.png"></a>
+										<a href=""><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									</div>
 									<div class="col-xs-12 media-box">
 										<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png">
