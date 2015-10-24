@@ -86,9 +86,7 @@ NAVIGATION STYLES
 .top-nav{
 	text-align: center;
 }
-.footer-nav{
-	
-}
+
 .nav {
 	border: 0;
 	background-color:$white;
@@ -320,6 +318,42 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+
+.footer {
+	clear: both;
+	background-color: $red-purple;
+	color: $white;
+	.footer-nav{
+		margin-top: 10px;
+		background-color: $red-purple;
+		li{
+			width: 49%;
+			float: left;
+			text-align: left;
+			border-left: 1px solid $white;
+		}
+		a{
+			font-size: 0.9em;
+			color: $white;
+			margin: 0;
+		}
+	}
+	.footer__logo{
+		width: 158px;
+		height: auto;
+		margin: $gap/2 0;
+	}
+	.footer__detail{
+		text-align: left;
+		border-left: 1px solid $white;
+		padding-left: 20px;
+	}
+	.footer__copyright{
+		font-size: 0.9em;
+		margin-top: 100px;
+		margin-bottom: 10px;
+	}
+}
 .footer-links {
 	ul {
 		li {
