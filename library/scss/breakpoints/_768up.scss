@@ -43,18 +43,24 @@ HEADER STYLES
 		padding-bottom: 10px;
 	}
 	.header__hotline{
-		text-transform: uppercase;
-		display: none;
+		display: inline-block;
+		font-size: 1.2em;
 	}
 	.header__logo{
 		margin: 40px 0 10px 20px;
-		//padding: 25px 20px;
 	}
-	.header__language{
-		display:none;
+	.header__right-top{
+		margin: 40px 20px 0 0;
+		a{
+			color:$primary;
+		}
+		.header__right-top__language{
+			vertical-align: 10px;
+			margin-left: 10px;
+		}
 	}
-	.header__menu-icon{
-		display: none;
+	.header__right-bottom{
+		margin-right:20px;
 	}
 }
 
@@ -68,11 +74,20 @@ Maowei CUSTOM STYLES
   	@include transition();
   	height: auto;
 }
+//slideshow
+
+.slick-dots{
+	display: block!important;
+	bottom: 0px;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
 .top-nav{
 	text-align: center;
+}
+.footer-nav{
+	
 }
 .nav {
 	border: 0;

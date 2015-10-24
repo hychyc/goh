@@ -56,32 +56,42 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="header__top">
 						<div class="row text-center">
-							<div class="header__hotline">
+							<div class="header__hotline visible-xs-inline">
 								<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-xs-8">
+							<div class="col-xs-8 col-md-6">
 								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo@2x.png"></a>
 							</div>
-							<div class="col-xs-4 text-right">
+							<div class="col-xs-4 col-md-6 text-right">
 								<!--for mobile-->
-								<a href="<?php echo home_url(); ?>" class="clearfix">
+								<a href="<?php echo home_url(); ?>" class="clearfix visible-xs-block">
 									<img class="header__language" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_cn.png">
 								</a>
-								<a href="#"  class="clearfix">
+								<a href="#"  class="clearfix visible-xs-block">
 									<div class="header__menu-icon js-nav-toggle">menu</div>
 								</a>
 								<!--end for mobile-->
 								<!--for desktop-->
-								<a class="donate purple-border hidden-xs">
-									<span>
-										<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
+								<div class="header__right-top hidden-xs">
+									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
+									<span class="header__right-top__language">
+										<a href="#">EN</a> / 
+										<a href="#">中文</a>
 									</span>
-									donate
-								</a>
-								<div class="header__hotline hidden-xs">
-									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+									
+								</div>
+								<div class="header__right-bottom hidden-xs">
+									<a href="#" class="donate purple-border ">
+										<span>
+											<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
+										</span>
+										donate
+									</a>
+									<div class="header__hotline hidden-xs">
+										<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+									</div>	
 								</div>
 								<!--end for desktop-->
 							</div>

@@ -81,12 +81,12 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+	//color: $link-color;
 	cursor: pointer;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
+		//color: $link-hover;
 	}
 
 	/* on click */
@@ -170,8 +170,15 @@ Maowei CUSTOM STYLES
 .donate{
 	text-transform: uppercase;
 	font-size: 1.2em;
+	color:$primary; 
 	.donate__icon{
-		width: 21px;
+		width: 15px;
+	}
+	@include transition();
+	&:hover, &:focus {
+		color:$white;
+		background-color:$primary; 
+		text-decoration: none;
 	}
 }
 .donate--large{
@@ -180,6 +187,7 @@ Maowei CUSTOM STYLES
 	text-align: center;
 	width: 100%;
 	margin-bottom:$gap;
+
 }
 .hotline--large{
 	padding:10px 0;

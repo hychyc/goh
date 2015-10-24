@@ -29,7 +29,7 @@
 									</div>
 								</div>
 								<div class="text-center block">
-									<a class="donate purple-border">
+									<a href="#" class="donate purple-border">
 										<span>
 											<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
 										</span>
