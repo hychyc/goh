@@ -70,6 +70,15 @@ HEADER STYLES
 /*********************
 Maowei CUSTOM STYLES
 *********************/
+//over ride bootstrape
+.row-fix-hight{
+    overflow: hidden; 
+    [class*="col-"]{
+	    margin-bottom: -99999px;
+	    padding-bottom: 99999px;
+	}
+}
+///////////////////////
 .donate{
 	font-size: 1em;
 }
@@ -142,6 +151,11 @@ Maowei CUSTOM STYLES
 		width: 25%;
 
 	}
+}
+.temp__header{
+	font-size: 4.28em;
+	margin-top: 80px;
+	text-align: left;
 }
 
 //slideshow

@@ -22,10 +22,13 @@
 										// echo $page->post_title;
 									?>
 								
-								<div class="row gap-top-1 bg-dark-blue">
-									<div class="col-xs-12 col-md-push-3 col-md-9 bg-solid-white">
+								<div class="row gap-top-1 row-fix-hight">
+									<div class="col-xs-12 col-md-3 bg-dark-blue">
+										 <p></p>
+									</div>
+									<div class="col-xs-12 col-md-9 bg-solid-white">
 										<div class="col-md-10 col-md-push-1">
-											<h1 class="temp-title">
+											<h1 class="temp__header">
 												<?php the_title(); ?>
 											</h1>
 											<div class="divider--left"></div>
@@ -35,7 +38,7 @@
 											<p>
 												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed .
 											</p>
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												MISSION & BELIEFS
 											</h2>
 											<p class="temp-last">
@@ -44,13 +47,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="row bg-blue">
+								<div class="row bg-blue row-fix-hight">
 									<div class="col-xs-12 col-md-8 bg-pink">
 										<div class="col-md-6">
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												BOARD OF DIRECTORS
 											</h2>
-											<ul>
+											<ul class="temp__list--italic">
 												<li>Ms. Lee-Lee Chang</li>
 												<li>Ms. Lee-Lee Chang</li>
 												<li>Ms. Lee-Lee Chang</li>
@@ -61,10 +64,10 @@
 											</ul>
 										</div>
 										<div class="col-md-6">
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												ADVISORY COMMITTEE
 											</h2>
-											<ul>
+											<ul class="temp__list--italic">
 												<li>Ms. Lee-Lee Chang</li>
 												<li>Ms. Lee-Lee Chang</li>
 												<li>Ms. Lee-Lee Chang</li>
@@ -74,30 +77,35 @@
 												<li>Ms. Lee-Lee Chang</li>
 											</ul>
 										</div>
+
 										<div class="col-md-12">
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												EXECUTIVE DIRECTOR
 											</h2>
-											<P>
+											<P class="temp__list--italic">
 												Yuanfen (Kristen) Liu Chi
 											</P>
 										</div>
-										<div class="divider--left"></div>
 										<div class="col-md-12">
-											<h2 class="temp-subtitle">
+											<div class="divider--left"></div>
+											<h2 class="temp__ptitle">
 												EMPLOYMENT  OPPORTUNITIES
 											</h2>
 											<P>
 												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Congue in, nisl euismod, eius laoreet in pellentesque, mollis ut scelerisque fermentum est, lobortis per est adipiscing. Ligula rutrum magnis convallis augue aliquam, eros pharetra suspendisse elementum etiam.
 											</P>
+											<a href="#" class="btn__more">
+												<span>more</span>	
+												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
+											</a>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-4">
 										<div class="col-md-12">
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												PUBLICATIONS 
 											</h2>
-											<ul>
+											<ul class="temp__list">
 												<li><a href="#">Newsletters</a></li>
 												<li><a href="#">Brochures</a></li>
 												<li><a href="#">Annual Reports</a></li>
@@ -105,14 +113,29 @@
 											<div class="divider--left"></div>
 										</div>
 										<div class="col-md-12">
-											<h2 class="temp-subtitle">
+											<h2 class="temp__ptitle">
 												News
 											</h2>
-											<h3 class="temp-date">JUN 01, 2015</h3>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Lorem quis erat ac...
-											</p>
-											<div class="divider--left"></div>
+											<div class="temp__postlist">
+												<div class="temp__postlist__date">JUN 01, 2015</div>
+												<div class="temp__postlist__title">Lorem ipsum dolor si</div>
+												<p>
+													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum...
+												</p>
+												<div class="divider--left"></div>
+											</div>
+											<div class="temp__postlist">
+												<div class="temp__postlist__date">JUN 01, 2015</div>
+												<div class="temp__postlist__title">Lorem ipsum dolor si</div>
+												<p>
+													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum...
+												</p>
+												<div class="divider--left"></div>
+											</div>
+											<a href="#" class="btn__more">
+												<span>more</span>	
+												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
+											</a>
 										</div>
 									</div>
 								</div>	
