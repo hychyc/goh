@@ -17,7 +17,9 @@ come into play. Have fun!
 GENERAL STYLES
 *********************/
 
-body {}
+body {
+	font-size: 14px;
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -44,7 +46,7 @@ HEADER STYLES
 	}
 	.header__hotline{
 		display: inline-block;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	.header__logo{
 		margin: 40px 0 10px 20px;
@@ -68,11 +70,14 @@ HEADER STYLES
 /*********************
 Maowei CUSTOM STYLES
 *********************/
+.donate{
+	font-size: 1em;
+}
 .background{
 	position: absolute;
 	top: 750px;
 	width: 100%;
-	height: 550px;
+	height: 610px;
 	.background__left{
 		position: absolute;
 		width: 50%;
@@ -94,6 +99,10 @@ Maowei CUSTOM STYLES
 		margin-left: -15px;
 	}
 }
+.hotline--large{
+	font-size: 1em;
+}
+
 
 .js-nav{
 	visibility: visible;
@@ -106,13 +115,32 @@ Maowei CUSTOM STYLES
 }
 .media-box{
 	margin-bottom:65px;
+	.media-box__title{
+		font-size: 1em;
+	}
 }
-.push-top{
-	margin-top: -50%;
+.event-box{
+	.event-box__top{
+		.event-box__top__badge{
+		}
+		.event-box__top__date{
+			font-size :2.4em;
+		}
+	}
+	.event-box__bottom{
+		.event-box__bottom__title{
+			font-size: 1.8em;
+		}
+	}
 }
 .img-box{
+	text-align: center;
+	.img-box__title{
+		font-size: 1.8em;
+	}
 	.img-box__img{
 		width: 25%;
+
 	}
 }
 
@@ -124,6 +152,13 @@ Maowei CUSTOM STYLES
 .slider{
 	margin: 0 auto;
 	max-width: 810px;
+}
+//general use
+.push-top{
+	margin-top: -50%;
+}
+.divider--left{
+	margin: 30px 0;
 }
 //js use
 .js-top{
@@ -149,7 +184,7 @@ NAVIGATION STYLES
 		padding: 0 5px;
 		a {
 			border-bottom: 0;
-
+			font-size: 1em;
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
@@ -382,7 +417,7 @@ mobile. Make sure to double check these!
 			border-left: 1px solid $white;
 		}
 		a{
-			font-size: 0.9em;
+			font-size: 0.8em;
 			color: $white;
 			margin: 0;
 		}
@@ -396,9 +431,10 @@ mobile. Make sure to double check these!
 		text-align: left;
 		border-left: 1px solid $white;
 		padding-left: 20px;
+		font-size: 0.8em;
 	}
 	.footer__copyright{
-		font-size: 0.9em;
+		font-size: 0.8em;
 		margin-top: 100px;
 		margin-bottom: 10px;
 	}

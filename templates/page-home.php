@@ -150,7 +150,7 @@
 										</p>
 									</div>
 									<div class="col-xs-12 col-md-12">
-										<div class="img-box">
+										<div class="img-box text-center">
 											<div class="divider"></div>
 											<h1 class="img-box__title">events</h1>
 											<img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph02.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph03.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png">

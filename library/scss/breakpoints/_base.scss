@@ -358,12 +358,56 @@ Maowei CUSTOM STYLES
 	background-color: $primary;
 	margin: 30px auto 10px auto;
 }
+.temp-title{
+	font-family: $serif;
+	font-weight: lighter;
+	font-size: 4.28em;
+	margin-top: 80px;
+	text-transform: uppercase;
+}
+.temp-subtitle{
+	margin-top: 50px;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+.temp-date{
+	font-size: 12px;
+	color: $white;
+	background-color: $primary;
+	padding: 3px 5px;
+	display: inline-block;
+}
+.temp-last{
+	margin-bottom: 100px;
+}
+.italic{
+	font-style: italic;
+}
 .block{
 	margin: $gap;
 }
-.gap-top{
+.gap-top-1{
 	margin-top: $gap;
 }
+.gap-top{
+	margin-top: $gap*3;
+}
+.bg-white{
+	background-color: $bg-white-60;
+}
+.bg-solid-white{
+	background-color: $white;
+}
+.bg-pink{
+	background-color: $bg-pink-60;
+}
+.bg-blue{
+	background-color: $bg-blue-60;
+}
+.bg-dark-blue{
+	background-color: $primary;
+}
+
 .purple-bg{
 	display: inline-block;
 	background-color: $primary;
