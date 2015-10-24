@@ -56,7 +56,7 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="header__top">
 						<div class="row text-center">
-							<div class="header__hotline visible-xs-inline">
+							<div class="header__hotline visible-xs-inline visible-sm-inline">
 								<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 								</a>
 								<!--end for mobile-->
 								<!--for desktop-->
-								<div class="header__right-top hidden-xs">
+								<div class="header__right-top hidden-xs hidden-sm">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									<span class="header__right-top__language">
 										<a href="#">EN</a> / 
@@ -83,13 +83,13 @@
 									
 								</div>
 								<div class="header__right-bottom hidden-xs">
-									<a href="#" class="donate purple-border ">
+									<a href="#" class="donate purple-border hidden-sm">
 										<span>
 											<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
 										</span>
 										donate
 									</a>
-									<div class="header__hotline hidden-xs">
+									<div class="header__hotline">
 										<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 									</div>	
 								</div>

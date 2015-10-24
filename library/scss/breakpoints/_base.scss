@@ -24,6 +24,10 @@ body {
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
   	color:$primary;
+  	overflow-x:hidden;
+}
+.row{
+	margin: 0;
 }
 
 /********************
@@ -198,6 +202,7 @@ Maowei CUSTOM STYLES
 	color:$white;
 	text-transform: uppercase;
 	font-size: 1.2em;
+	display: inline-block;
 	@include transition();
 	&:hover, &:focus {
 		color:$white;
@@ -215,7 +220,7 @@ Maowei CUSTOM STYLES
 	color:$regular;
 	border-top:1px solid $regular;
 	border-bottom:1px solid $regular;
-	padding: $gap;
+	padding: $gap 0;
 	margin-bottom: $gap;
 	.text-box__title{
 		font-family: $serif;
@@ -234,6 +239,7 @@ Maowei CUSTOM STYLES
 	.text-box__caption{
 		font-size: 1em;
 		text-align: left;
+		padding:0 20px;
 	}
 }
 .media-box{
@@ -289,14 +295,14 @@ Maowei CUSTOM STYLES
 	.event-box__bottom{
 		text-decoration: none;
 		display: block;
-		padding:0 13px;
+		padding:0 13px 13px 13px;
 		.event-box__bottom__title{
 			font-size: 2em;
 			color: $primary;
 			font-weight: 200;
 			font-style: italic;
 			text-transform: uppercase;
-			width: 80%;
+			width: 100%;
 			margin:0.5em 0 0.2em 0;
 		}
 		.event-box__bottom__caption{
@@ -307,13 +313,13 @@ Maowei CUSTOM STYLES
 			width: 23px;
 			height: auto;
 			position: absolute;
-			bottom:1em;
-			right:1.5em;
+			bottom:40px;
+			right:32px;
 			@include transition(100ms);
 		}
 		&:hover,&:focus {
 			.event-box__bottom__arrow{
-				right:1em;
+				right:26px;
 			}
 		}
 	}
@@ -335,8 +341,13 @@ Maowei CUSTOM STYLES
 	}
 }
 //slideshow
+.slider-container{
+	margin-bottom: $gap;
+	width: 100%;
+}
 .slider{
-	margin: 0 50px;
+	margin: 0 auto;
+	max-width: 810px;
 }
 .slick-dots{
 	display: none!important;
@@ -350,6 +361,9 @@ Maowei CUSTOM STYLES
 }
 .block{
 	margin: $gap;
+}
+.gap-top{
+	margin-top: $gap;
 }
 .purple-bg{
 	display: inline-block;

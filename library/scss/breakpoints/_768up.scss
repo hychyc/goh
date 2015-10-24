@@ -68,17 +68,62 @@ HEADER STYLES
 /*********************
 Maowei CUSTOM STYLES
 *********************/
+.background{
+	position: absolute;
+	top: 750px;
+	width: 100%;
+	height: 550px;
+	.background__left{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background-color: $bg-light-blue;
+	}
+	.background__right{
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+		background-color: $bg-pink;
+	}
+	.backgronud__diamond{
+		position: absolute;
+		left: 50%;
+		width: 30px;
+		height: auto;
+		margin-left: -15px;
+	}
+}
+
 .js-nav{
 	visibility: visible;
   	opacity: 1;
   	@include transition();
   	height: auto;
 }
-//slideshow
+.text-box--goh{
+	//margin:0 $gap;
+}
+.media-box{
+	margin-bottom:65px;
+}
+.push-top{
+	margin-top: -50%;
+}
+.img-box{
+	.img-box__img{
+		width: 25%;
+	}
+}
 
+//slideshow
 .slick-dots{
 	display: block!important;
 	bottom: 0px;
+}
+//js use
+.js-top{
+	float: right;
 }
 /*********************
 NAVIGATION STYLES
