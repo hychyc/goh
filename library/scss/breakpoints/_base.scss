@@ -353,7 +353,7 @@ Maowei CUSTOM STYLES
 }
 .temp__ptitle{
 	margin-top: 50px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-transform: uppercase;
 }
 
@@ -384,6 +384,15 @@ Maowei CUSTOM STYLES
 		padding: 3px 5px;
 		display: inline-block;
 		margin-top: 12px;
+	}
+}
+.temp__box{
+	border: 1px solid $regular;
+	border-bottom: 9px solid $regular;
+	padding: 18px;
+	margin: $gap 0;
+	.temp__ptitle{
+		margin: 10px 0 $gap 0;
 	}
 }
 .temp-last{
@@ -445,6 +454,12 @@ Maowei CUSTOM STYLES
 }
 .gap-top-1{
 	margin-top: $gap;
+}
+.gap-bottom-1{
+	margin-bottom: $gap;
+}
+.gap-bottom-2{
+	margin-bottom: $gap*2;
 }
 .gap-top{
 	margin-top: $gap*3;
