@@ -2,8 +2,8 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap cf">
-				this is archive page 01
+				<div id="inner-content" class="wrap">
+				this is past events
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php
@@ -14,6 +14,17 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+								<div class="row">
+									<div class="col-xs-12 gap-top-1 gap-bottom-1">
+										<div class="col-md-8 col-md-push-2 gap-bottom-2">
+											<h1 class="temp__header--center temp__header">
+												<?php the_title(); ?>
+											</h1>
+											<div class="divider--left visible-xs-block"></div>
+											
+										</div>
+									</div>
+								</div>
 
 								<header class="entry-header article-header">
 
