@@ -86,6 +86,7 @@ LINK STYLES
 a, a:visited {
 	//color: $link-color;
 	cursor: pointer;
+	display: inline-block;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -146,9 +147,8 @@ HEADER STYLES
 		text-transform: uppercase;
 	}
 	.header__logo{
-		width: 100%;
-		max-width: 278px;
-		height: auto;
+		width: auto;
+		height: 80px;
 		margin-top: 20px;
 		margin-left: 20px;
 		//padding: 25px 20px;

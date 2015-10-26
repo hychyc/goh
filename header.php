@@ -64,7 +64,7 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-8 col-md-6">
-								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo@2x.png"></a>
+								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
 							</div>
 							<div class="col-xs-4 col-md-6 text-right">
 								<!--for mobile-->

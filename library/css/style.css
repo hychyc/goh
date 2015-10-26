@@ -827,6 +827,7 @@ LINK STYLES
 *********************/
 a, a:visited {
   cursor: pointer;
+  display: inline-block;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
@@ -868,9 +869,8 @@ HEADER STYLES
   .header .header__hotline {
     text-transform: uppercase; }
   .header .header__logo {
-    width: 100%;
-    max-width: 278px;
-    height: auto;
+    width: auto;
+    height: 80px;
     margin-top: 20px;
     margin-left: 20px; }
   .header .header__language {
