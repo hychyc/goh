@@ -46,7 +46,7 @@
 										<a class="event-box__bottom" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 											<h1 class="event-box__bottom__title"><?php the_title(); ?></h1>
 											<p class="event-box__bottom__caption">
-												<?php the_excerpt(); ?>
+												<?php echo substr(get_the_excerpt(), 0,50); ?>
 											</p>
 											<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
 										</a>

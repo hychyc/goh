@@ -241,6 +241,13 @@ and be up and running in seconds.
 function bones_fonts() {
   wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
 }
+function get_the_twitter_excerpt(){
+  $excerpt = get_the_content();
+  $excerpt = strip_shortcodes($excerpt);
+  $excerpt = strip_tags($excerpt);
+  $the_str = substr($excerpt, 0, 20);
+  return $the_str;
+}
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
