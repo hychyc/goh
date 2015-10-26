@@ -739,6 +739,7 @@ POSTS & CONTENT STYLES
 				p {
 					margin: 0;
 				}
+
 			}
 
 		} /* end .hentry */
@@ -1351,6 +1352,10 @@ view.
 	.footer__copyright{
 		font-size: 0.9em;
 		margin: 0;
+	}
+
+	#inner-footer{
+		padding-top:30px;
 	}
 }
 

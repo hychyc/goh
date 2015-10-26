@@ -123,6 +123,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/diamond@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 692,
+		"inputAbbreviatedPath": "\/images\/diamond@2x.png",
+		"outputAbbreviatedPath": "\/images\/diamond@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/eventBadge@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -134,13 +145,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/fb@2x.png": {
+	"\/images\/FB@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1827,
-		"inputAbbreviatedPath": "\/images\/fb@2x.png",
-		"outputAbbreviatedPath": "\/images\/fb@2x.png",
+		"inputAbbreviatedPath": "\/images\/FB@2x.png",
+		"outputAbbreviatedPath": "\/images\/FB@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -207,6 +218,17 @@
 		"initialSize": 1313,
 		"inputAbbreviatedPath": "\/images\/linkArrow@2x.png",
 		"outputAbbreviatedPath": "\/images\/linkArrow@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/linkArrow_small@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 669,
+		"inputAbbreviatedPath": "\/images\/linkArrow_small@2x.png",
+		"outputAbbreviatedPath": "\/images\/linkArrow_small@2x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
