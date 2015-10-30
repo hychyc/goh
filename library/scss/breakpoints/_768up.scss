@@ -158,6 +158,27 @@ Maowei CUSTOM STYLES
 		}
 	}
 }
+.event-content{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 36px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 36px; /* Firefox */
+    column-gap: 36px;
+    margin: $gap 0;
+}
+.full-box{
+	padding-top:31%;
+	
+	.full-box__title{	
+		font-size: 3em;
+		font-weight: 300;
+	}
+	.full-box__date{
+		font-size:2em;
+		font-weight: 300;
+	}
+}
 .img-box{
 	text-align: center;
 	.img-box__title{

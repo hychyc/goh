@@ -327,6 +327,43 @@ Maowei CUSTOM STYLES
 		}
 	}
 }
+
+.full-box{
+	width: 100%;
+	padding-top:60%;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	margin-bottom: $gap;
+	.full-box__badge{
+		top:1em;
+		left: 2em;
+		width: 61px;
+		height: auto;
+		position: absolute;
+	}
+	.full-box__copy{
+		position: absolute;
+		bottom:2em;
+		left: 2em;
+		font-family: inherit;
+		text-transform: uppercase;
+	}
+	.full-box__title{
+		margin: 0;
+		font-size: 2em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+    	font-style: italic;
+
+	}
+	.full-box__date{
+		margin: 0;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+		font-size:1.5em;
+	}
+}
 .img-box{
 	text-align: center;
 	.img-box__title{

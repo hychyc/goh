@@ -14,45 +14,53 @@
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-12">
-									<div class="event-box">
-										<div class="event-box__top">
-											<?php the_post_thumbnail( 'bones-thumb-600', array( 'class' => 'event-box__top__img' ) ); ?>
-											<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
-											<h2 class="event-box__top__date">jun 13 2015</h2>
-										</div>
-										<a class="event-box__bottom" href="#">
-											<h1 class="event-box__bottom__title">summer</h1>
-											<p class="event-box__bottom__caption">
-											Lorem quis erat ac, praesent ligula odio pellentesque.</p>
-											<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
-										</a>
-									</div>
-								</div>
-							</div>
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
 							
-								<div class="col-xs-12 col-md-4">
-									<div class="event-box">
-										<div class="event-box__top">
-											<?php the_post_thumbnail( 'large', array( 'class' => 'event-box__top__img' ) ); ?>
-											<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
-											<h2 >
-											<?php the_date('M d Y', '<h2 class="event-box__top__date">', '</h2>'); ?>
-											</h2>
-										</div>
-										<a class="event-box__bottom" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-											<h1 class="event-box__bottom__title"><?php the_title(); ?></h1>
-											<p class="event-box__bottom__caption">
-												<?php echo substr(get_the_excerpt(), 0,50); ?>
-											</p>
-											<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
-										</a>
-									</div>
-								</div>
-
+							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+								<?php if( $wp_query->current_post == 0 && !is_paged() ) : // get the first post?> 
+											<div class="row">
+												<div class="col-xs-12 col-md-12">
+													<?php 
+														$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'bones-thumb-full' );
+														$url = $thumb['0']; 
+													?>
+													<div class="full-box" style="background-image:url('<?php echo $url?>')">
+														<img class="full-box__badge hidden-xs" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
+														<div class="full-box__copy">
+															<h2 class="full-box__date"><?php echo get_field('event_start_date')?></h2>
+															<h1 class="full-box__title"><?php the_title(); ?></h1>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 col-md-12">
+													<div class="event-content">
+														<?php 
+															global $more; 
+															$more = 1;
+															the_content();
+														?>
+													</div>
+												</div>
+											</div>
+										<?php else:?>
+											<div class="col-xs-12 col-md-4">
+												<div class="event-box">
+													<div class="event-box__top">
+														<?php the_post_thumbnail( 'large', array( 'class' => 'event-box__top__img' ) ); ?>
+														<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
+														<h2 >
+														<?php echo '<h2 class="event-box__top__date">'.get_field('event_start_date').'</h2>';?>
+														</h2>
+													</div>
+													<a class="event-box__bottom" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+														<h1 class="event-box__bottom__title"><?php the_title(); ?></h1>
+														<p class="event-box__bottom__caption">
+															<?php echo substr(get_the_excerpt(), 0,50); ?>
+														</p>
+														<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
+													</a>
+												</div>
+											</div>
+									<?php endif ?>
 							<?php endwhile; ?>
 
 									<?php bones_page_navi(); ?>
@@ -75,7 +83,7 @@
 
 						</main>
 
-					<?php get_sidebar(); ?>
+					<?php// get_sidebar(); ?>
 
 				</div>
 
