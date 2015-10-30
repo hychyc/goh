@@ -348,6 +348,9 @@ Maowei CUSTOM STYLES
 		left: 2em;
 		font-family: inherit;
 		text-transform: uppercase;
+		color:$regular;
+		text-decoration: none;
+		width: 90%;
 	}
 	.full-box__title{
 		margin: 0;
@@ -355,13 +358,24 @@ Maowei CUSTOM STYLES
 		font-family: 'Lato', sans-serif;
 		font-weight: 400;
     	font-style: italic;
-
+	}
+	.full-box__title--purple{
+		background-color: $heavy;
+		color: $white;
+		display: inline-block;
+		padding: 5px 10px;
 	}
 	.full-box__date{
-		margin: 0;
+		margin:0;
 		font-family: 'Lato', sans-serif;
 		font-weight: 400;
 		font-size:1.5em;
+		text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+	}
+	.full-box__date--white{
+		margin: 0 0 5px 10px;
+		color: $white;
+		text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
 	}
 }
 .img-box{
@@ -473,6 +487,7 @@ Maowei CUSTOM STYLES
 		font-weight: bold;
 		margin-top: 10px;
 	}
+	
 	.temp__postlist__date{
 		font-size: 12px;
 		color: $white;
