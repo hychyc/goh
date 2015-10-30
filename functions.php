@@ -249,6 +249,7 @@ function get_the_twitter_excerpt(){
   return $the_str;
 }
 
+
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

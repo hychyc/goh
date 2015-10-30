@@ -62,6 +62,22 @@
 											</div>
 									<?php endif ?>
 							<?php endwhile; ?>
+									<div class="row">
+										<?php
+										    //echo get_category_link('past-events');
+											$category_id = get_cat_ID( 'past events' );
+											$category_link = get_category_link( $category_id );
+										?>
+											<div class="col-xs-12 text-center">
+												<a class="purple-bg btn--purple" href="<?php echo $category_link?>">view archive</a>
+											</div>
+									</div>
+									<div class="divider--full"></div>
+									<div class="row">
+										<div class="col-xs-12 text-center">
+											<img class="top-arrow js-top" src="<?php echo get_template_directory_uri(); ?>/library/images/goTopBtn@2x.png">
+										</div>
+									</div>
 
 									<?php bones_page_navi(); ?>
 

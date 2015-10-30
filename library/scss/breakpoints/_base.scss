@@ -147,10 +147,10 @@ HEADER STYLES
 		text-transform: uppercase;
 	}
 	.header__logo{
-		width: auto;
-		height: 80px;
+		width: 100%;
+		height: auto;
 		margin-top: 20px;
-		margin-left: 20px;
+		margin-left: 10px;
 		//padding: 25px 20px;
 	}
 	.header__language{
@@ -514,6 +514,19 @@ Maowei CUSTOM STYLES
 	}
 	a{
 		color:$regular;
+	}
+}
+.btn--purple{
+	@include transition();
+	text-transform: uppercase;
+	font-style: italic;
+	margin: $gap;
+	padding: $gap $gap*2;
+	&:hover, &:focus {
+		text-decoration: none;
+		color:$primary;
+		border:1px solid $primary;
+		background-color: $white;
 	}
 }
 .btn__more{

@@ -49,7 +49,7 @@ HEADER STYLES
 		font-size: 1em;
 	}
 	.header__logo{
-		margin: 40px 0 10px 20px;
+		margin: 50px 0 10px 20px;
 	}
 	.header__right-top{
 		margin: 40px 20px 0 0;
@@ -166,6 +166,8 @@ Maowei CUSTOM STYLES
     -moz-column-gap: 36px; /* Firefox */
     column-gap: 36px;
     margin: $gap 0;
+    padding: $gap 0;
+    border-bottom: 30px $dark solid;
 }
 .full-box{
 	padding-top:31%;
