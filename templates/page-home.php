@@ -28,10 +28,13 @@
 										// echo $page->post_title;
 									?>
 								<div class="row slider-container">
+									<?php
+										$images = get_field('slides');
+									 ?>
 									<div class="slider">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/slider01.png">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/slider02.png">
-										<img src="<?php echo get_template_directory_uri(); ?>/library/images/slider03.png">
+										<?php foreach( $images as $image ): ?>
+											<img src="<?php echo $image['url']; ?>">
+										<?php endforeach; ?>
 									</div>
 								</div>
 								<div class="text-center visible-xs-block">
@@ -51,9 +54,9 @@
 											<h2 class="text-box__subtitle">
 												紐約勵馨
 											</h2>
-											<p class="text-box__caption">
-												Help those women being abused with hotline, safety planning, crisis intervention, emergency shelter, legal referrals and advocacy. Provide assistance of order of protection, public welfare and crime victims compensation.
-											</p>
+											<div class="text-box__caption">
+												<?php the_content(); ?>
+											</div>
 										</div>
 									</div>
 									<div class="col-xs-12 text-center visible-xs-block">
@@ -62,7 +65,7 @@
 									<div class="col-xs-12  col-md-5 col-md-pull-6">
 										<div class="media-box">
 											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png">
-											<a href="#topage" class="media-box__title">
+											<a href="<?php echo get_page_link(9); ?>" class="media-box__title">
 												about us
 											</a>
 										</div>
@@ -70,7 +73,7 @@
 									<div class="col-xs-12 col-md-5 col-md-push-7">
 										<div class="media-box push-top">
 											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph02.png">
-											<a href="#topage" class="media-box__title">
+											<a href="<?php echo get_page_link(15); ?>" class="media-box__title">
 												our service
 											</a>
 										</div>
@@ -78,16 +81,16 @@
 									<div class="col-xs-12 col-md-5 col-md-pull-5">
 										<div class="media-box">
 											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph03.png">
-											<a href="#topage" class="media-box__title">
+											<a href="<?php echo get_page_link(21); ?>" class="media-box__title">
 												make a difference
 											</a>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-5 col-md-push-7">
 										<div class="text-box push-top">
-											<p class="text-box__caption">
-												Help those women being abused with hotline, safety planning, crisis intervention, emergency shelter, legal referrals and advocacy. Provide assistance of order of protection, public welfare and crime victims compensation. crisis intervention.
-											</p>
+											<div class="text-box__caption">
+												<?php the_field('caption1'); ?>
+											</div>
 										</div>
 									</div>
 									<div class="col-md-12 gap-top"></div>
@@ -145,9 +148,7 @@
 									</div>
 									
 									<div class="col-xs-12 col-md-6 gap-top">
-										<p>
-											Help those women being abused with hotline, safety planning, crisis intervention, emergency shelter, legal referrals and advocacy. Provide assistance of order of protection, public welfare and crime victims compensation. crisis intervention.
-										</p>
+										<?php the_field('caption2'); ?>
 									</div>
 									<div class="col-xs-12 col-md-12">
 										<div class="img-box text-center">
