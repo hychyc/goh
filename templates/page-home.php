@@ -94,50 +94,39 @@
 										</div>
 									</div>
 									<div class="col-md-12 gap-top"></div>
-									<div class="col-xs-12 col-md-4">
-										<div class="event-box">
-											<div class="event-box__top">
-												<img class="event-box__top__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph04.png">
-												<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
-												<h2 class="event-box__top__date">jun 13 2015</h2>
-											</div>
-											<a class="event-box__bottom" href="#">
-												<h1 class="event-box__bottom__title">summer</h1>
-												<p class="event-box__bottom__caption">
-												Lorem quis erat ac, praesent ligula odio pellentesque.</p>
-												<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
-											</a>
-										</div>
-									</div>
 
-									<div class="col-xs-12 col-md-4">
-										<div class="event-box">
-											<div class="event-box__top">
-												<img class="event-box__top__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph05.png">
-												<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/newletterBadge@2x.png">
-												<h2 class="event-box__top__date">May 01 2015</h2>
+									<div id="latest-events">
+										<?php
+											global $post;
+											$myposts = get_posts('numberposts=3&offset=1&category=4');
+											foreach($myposts as $post) :
+										?>
+
+										<div class="col-xs-12 col-md-4">
+											<div class = "event-box">
+
+												<div class="event-box__top">
+													<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+														<?php the_post_thumbnail( 'large', array( 'class' => 'event-box__top__img' ) ); ?>
+													</a>
+													<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
+													<h2 >
+													<?php echo '<h2 class="event-box__top__date">'.get_field('event_start_date').'</h2>';?>
+													</h2>
+												</div>
+												<a class="event-box__bottom" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+													<h1 class="event-box__bottom__title"><?php the_title(); ?></h1>
+													<p class="event-box__bottom__caption">
+														<?php echo substr(get_the_excerpt(), 0,50); ?>
+													</p>
+													<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
+												</a>
 											</div>
-											<a class="event-box__bottom" href="#">
-												<h1 class="event-box__bottom__title">MAY NEWSLETTER</h1>
-												<p class="event-box__bottom__caption">
-												Lorem quis erat ac, praesent ligula odio pellentesque.</p>
-												<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
-											</a>
 										</div>
+										<?php endforeach; ?>
+										<?php wp_reset_query();?> 
 									</div>
-									<div class="col-xs-12 col-md-4">
-										<div class="event-box">
-											<div class="event-box__top">
-												<img class="event-box__top__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph05.png">
-											</div>
-											<a class="event-box__bottom" href="#">
-												<h1 class="event-box__bottom__title">APRIL FAIR</h1>
-												<p class="event-box__bottom__caption">
-												Lorem quis erat ac, praesent ligula odio pellentesque.</p>
-												<img class="event-box__bottom__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png">
-											</a>
-										</div>
-									</div>
+									
 									<div class="col-xs-12 col-md-6 gap-top">
 										<a class="donate--large purple-border ">
 											<span>
@@ -148,7 +137,7 @@
 									</div>
 									
 									<div class="col-xs-12 col-md-6 gap-top">
-										<?php the_field('caption2'); ?>
+										<?php the_field('caption2'); ?> 
 									</div>
 									<div class="col-xs-12 col-md-12">
 										<div class="img-box text-center">
