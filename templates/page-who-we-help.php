@@ -31,7 +31,11 @@
 											</h1>
 											<div class="divider--left visible-xs-block"></div>
 											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Congue in, nisl euismod, eius laoreet in pellentesque, mollis ut scelerisque fermentum est, lobortis per est adipiscing. Ligula rutrum magnis convallis augue aliquam, eros pharetra suspendisse elementum etiam. Congue in, nisl euismod, eius.
+												<?php 
+													global $more; 
+													$more = 1;
+													the_content();
+												?>
 											</p>
 										</div>
 									</div>
@@ -40,34 +44,25 @@
 									<div class="col-xs-12 col-md-4">
 										<div class="temp__box">
 											<h2 class="temp__ptitle">
-												DOMESTIC VIOLENCE
+												<?php the_field('title1'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption1'); ?>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-4 ">
 										<div class="temp__box">
 											<h2 class="temp__ptitle">
-												CHILD ABUSE & NEGLECT
+												<?php the_field('title2'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption2'); ?>
 										</div>
 									</div>
 									<div class="col-xs-12  col-md-4">
 										<div class="temp__box">
 											<h2 class="temp__ptitle">
-												RAPE & SEXUAL ASSAULT
+												<?php the_field('title3'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption3'); ?>
 										</div>
 									</div>
 								</div>
@@ -75,23 +70,17 @@
 									<div class="col-xs-12 col-md-4 col-md-push-2">
 										<div class="temp__box">
 											<h2 class="temp__ptitle">
-												HUMAN TRAFFICKING
+												<?php the_field('title4'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption4'); ?>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-4 col-md-push-2">
 										<div class="temp__box">
 											<h2 class="temp__ptitle">
-												DATING VIOLENCE
+												<?php the_field('title5'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption5'); ?>
 										</div>
 									</div>
 								</div>

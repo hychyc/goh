@@ -29,7 +29,11 @@
 											</h1>
 											<div class="divider--left visible-xs-block"></div>
 											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Congue in, nisl euismod, eius laoreet in pellentesque, mollis ut scelerisque fermentum est, lobortis per est adipiscing. Ligula rutrum magnis convallis augue aliquam, eros pharetra suspendisse elementum etiam. Congue in, nisl euismod, eius.
+												<?php 
+													global $more; 
+													$more = 1;
+													the_content();
+												?>
 											</p>
 										</div>
 									</div>
@@ -45,16 +49,16 @@
 											<h2 class="temp__ptitle--white">
 												GARDEN OF HOPE CHINESE HOTLINE
 											</h2>
-											<a href="tel:18779908595" class="temp__number">
-												1-877-990-8595
+											<a href="<?php the_field('chinese_hot_line_url'); ?>" class="temp__number">
+												<?php the_field('chinese_hot_line'); ?>
 											</a>
 										</div>
 										<div class="gap-bottom-2 col-md-6 bg-red-purple text-center">
 											<h2 class="temp__ptitle--white">
 												NEW YORK CITY HOTLINE
 											</h2>
-											<a href="tel:18006214673" class="temp__number">
-												1-800-621-4673
+											<a href="<?php the_field('nyc_hot_line_url'); ?>" class="temp__number">
+												<?php the_field('nyc_hot_line'); ?>
 											</a>
 										</div>
 									</div>

@@ -140,11 +140,23 @@ jQuery(document).ready(function($) {
     var padding = $('.header').height();
     $('.js-content').css('padding-top',padding);
   }
+  function fullheight(){
+  	$('.js-full-height').each(function(){
+  		if($(window).width()>990){
+
+  			var h = $(this).parent().height();
+  			console.log(h);
+  			$(this).height(h);
+  		}
+  	})
+  }
  
   scroll_top();
   bodyTop();
+  fullheight();
   $(window).resize(function(event) {
     bodyTop();
+    fullheight();
   });
   $('.js-nav-toggle').click(function(){
     $('.js-nav').toggleClass('visible');

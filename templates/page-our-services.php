@@ -29,69 +29,58 @@
 											</h1>
 											<div class="divider--left visible-xs-block"></div>
 											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Congue in, nisl euismod, eius laoreet in pellentesque, mollis ut scelerisque fermentum est, lobortis per est adipiscing. Ligula rutrum magnis convallis augue aliquam, eros pharetra suspendisse elementum etiam. Congue in, nisl euismod, eius.
+												<?php 
+													global $more; 
+													$more = 1;
+													the_content();
+												?>
 											</p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-md-6 bg-white">
+									<div class="col-xs-12 col-md-6 bg-white js-full-height">
 										<div class="gap-bottom-2 col-xs-12">
 											<h2 class="temp__ptitle">
-												PUBLIC EDUCATION
+												<?php the_field('title1'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. 
-											</p>
+											<?php the_field('caption1'); ?>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-6 bg-pink">
-										<div class="gap-bottom-2 col-xs-12">
+									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
 											<h2 class="temp__ptitle">
-												CHILDREN SERVICES
+												<?php the_field('title2'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque.
-											</p>
+											<?php the_field('caption2'); ?>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-md-6 bg-blue">
-										<div class="gap-bottom-2 col-xs-12">
+									<div class="col-xs-12 col-md-6 bg-blue js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
 											<h2 class="temp__ptitle">
-												WOMEN SERVICES
+												<?php the_field('title3'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. 
-											</p>
+											<?php the_field('caption3'); ?>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-6 bg-white">
-										<div class="gap-bottom-2 col-xs-12">
+									<div class="col-xs-12 col-md-6 bg-white js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
 											<h2 class="temp__ptitle">
-												YOUTH SERVICES
+												<?php the_field('title4'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque.
-											</p>
+											<?php the_field('caption4'); ?>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-md-6 bg-pink">
-										<div class="gap-bottom-2 col-xs-12">
+									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
 											<h2 class="temp__ptitle">
-												RESIDENTIAL SERVICES
+												<?php the_field('title5'); ?>
 											</h2>
-											<p>
-												Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-												et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. 
-											</p>
+											<?php the_field('caption5'); ?>
 										</div>
 									</div>
 								</div>
