@@ -39,12 +39,11 @@
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-dark-purple">
-												<p>
-													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-													et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque.
-												</p>
+												
+												<?php the_field('give'); ?>
+												
 											</div>
-											<a href="#" class="btn__more">
+											<a href="<?php the_field('give_url'); ?>" class="btn__more">
 												<span>give now</span>	
 												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
 											</a>
@@ -56,12 +55,9 @@
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-red-purple">
-												<p>
-													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-													et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque.
-												</p>
+												<?php the_field('donate'); ?>
 											</div>
-											<a href="#" class="btn__more">
+											<a href="<?php the_field('donate_url'); ?>" class="btn__more">
 												<span>donate now</span>	
 												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
 											</a>
@@ -73,12 +69,9 @@
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-regular-purple">
-												<p>
-													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum, nulla ut amet,
-													et imperdiet quam sapien. Lorem quis erat ac, praesent ligula odio pellentesque.
-												</p>
+												<?php the_field('volunteer'); ?>
 											</div>
-											<a href="#" class="btn__more">
+											<a href="<?php the_field('volunteer_url'); ?>" class="btn__more">
 												<span>join now</span>	
 												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
 											</a>
