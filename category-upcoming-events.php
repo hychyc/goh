@@ -45,7 +45,9 @@
 											<div class="col-xs-12 col-md-4">
 												<div class="event-box">
 													<div class="event-box__top">
-														<?php the_post_thumbnail( 'large', array( 'class' => 'event-box__top__img' ) ); ?>
+														<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+															<?php the_post_thumbnail( 'large', array( 'class' => 'event-box__top__img' ) ); ?>
+														</a>
 														<img class="event-box__top__badge" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
 														<h2 >
 														<?php echo '<h2 class="event-box__top__date">'.get_field('event_start_date').'</h2>';?>
