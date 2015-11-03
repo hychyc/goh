@@ -815,7 +815,8 @@ POSTS & CONTENT STYLES
 			margin: 0;
 		}
 
-		.single-title {}
+		.single-title {
+		}
 
 		.page-title {}
 
@@ -835,10 +836,11 @@ POSTS & CONTENT STYLES
 
 		/* post meta */
 		.byline {
+			padding-top:10px;
 			color: $meta-gray;
 			font-style: italic;
 			margin: 0;
-
+			text-align:center;
 			time {}
 		}
 
