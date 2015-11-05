@@ -58,6 +58,21 @@
                     ) );
                   ?>
                 </section> <?php // end article section ?>
+                <div class="row">
+                  <?php 
+
+                  $images = get_field('gallery');
+
+                  if( $images ): ?>
+                        <?php foreach( $images as $image ): ?>
+                            <div class="col-xs-12 col-md-4">
+                                <a href="<?php echo $image['url']; ?>" class="swipebox gap-bottom-1" title="<?php echo $image['title']; ?>" >
+                                     <img src="<?php echo $image['sizes']['large-thumb-300']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                  <?php endif; ?>
+                </div>
 
                 <footer class="article-footer">
 
