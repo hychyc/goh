@@ -71,7 +71,7 @@
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-5 col-md-push-7">
-										<div class="media-box push-top">
+										<div class="media-box">
 											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph02.png">
 											<a href="<?php echo get_page_link(15); ?>" class="media-box__title">
 												our service
@@ -86,8 +86,8 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-5 col-md-push-7">
-										<div class="text-box push-top">
+									<div class="col-xs-12 col-md-12">
+										<div class="text-box">
 											<div class="text-box__caption">
 												<?php the_field('caption1'); ?>
 											</div>
@@ -118,7 +118,7 @@
 									<?php wp_reset_query();?>
 									
 									<div class="col-xs-12 col-md-6 gap-top">
-										<a class="donate--large purple-border ">
+										<a class="donate--large purple-border">
 											<span>
 												<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
 											</span>

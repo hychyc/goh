@@ -26,8 +26,8 @@
 													<div class="full-box" style="background-image:url('<?php echo $url?>')">
 														<img class="full-box__badge hidden-xs" src="<?php echo get_template_directory_uri(); ?>/library/images/eventBadge@2x.png">
 														<div class="full-box__copy">
-															<h2 class="full-box__date"><?php echo get_field('event_start_date')?></h2>
-															<h1 class="full-box__title"><?php the_title(); ?></h1>
+															<h2 class="full-box__date full-box__date--white"><?php echo get_field('event_start_date')?></h2>
+															<h1 class="full-box__title full-box__title--purple"><?php the_title(); ?></h1>
 														</div>
 													</div>
 												</div>
