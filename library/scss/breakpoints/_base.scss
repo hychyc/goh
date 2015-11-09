@@ -744,7 +744,7 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
-
+			visibility: hidden;
 			li {
 
 				a {
@@ -773,15 +773,15 @@ and more scalable.
 	li.current-menu-item,
 	li.current_page_item,
 	li.current_page_ancestor {
-
 		a {
-			background-color: $primary;
-			color:$white;
-			text-decoration: none;
-
 		}
-
-	}  /* end current highlighters */
+	}
+	li.current-menu-item>a,li.current-page-item>a,li.current_page_ancestor>a{
+		background-color: $primary;
+		color:$white;
+		text-decoration: none;
+	}
+	  /* end current highlighters */
 
 } /* end .nav */
 

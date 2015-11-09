@@ -1854,19 +1854,21 @@ and more scalable.
         background-color: #7f56c5;
         color: white;
         text-decoration: none; }
-    /* line 750, ../scss/breakpoints/_base.scss */
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
-      /* line 754, ../scss/breakpoints/_base.scss */
-      .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
-      .nav li ul.children li a:hover,
-      .nav li ul.children li a:focus {
-        text-decoration: none; }
-  /* line 777, ../scss/breakpoints/_base.scss */
-  .nav li.current-menu-item a,
-  .nav li.current_page_item a,
-  .nav li.current_page_ancestor a {
+    /* line 746, ../scss/breakpoints/_base.scss */
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      visibility: hidden; }
+      /* line 750, ../scss/breakpoints/_base.scss */
+      .nav li ul.sub-menu li a,
+      .nav li ul.children li a {
+        padding-left: 30px; }
+        /* line 754, ../scss/breakpoints/_base.scss */
+        .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+        .nav li ul.children li a:hover,
+        .nav li ul.children li a:focus {
+          text-decoration: none; }
+  /* line 779, ../scss/breakpoints/_base.scss */
+  .nav li.current-menu-item > a, .nav li.current-page-item > a, .nav li.current_page_ancestor > a {
     background-color: #7f56c5;
     color: white;
     text-decoration: none; }
@@ -2640,7 +2642,7 @@ you can add resource intensive styles.
     /* end current highlighters */ }
     /* line 245, ../scss/breakpoints/_768up.scss */
     .nav ul {
-      background: #323944;
+      background: white;
       margin-top: 0; }
     /* line 249, ../scss/breakpoints/_768up.scss */
     .nav li {
