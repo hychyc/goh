@@ -2254,6 +2254,9 @@ you can add resource intensive styles.
   .temp__box {
     padding-bottom: 36px; }
 
+  .slider-container {
+    overflow: visible; }
+
   .slick-dots {
     display: block !important;
     bottom: 0px; }
