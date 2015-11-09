@@ -16,7 +16,7 @@
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
@@ -57,25 +57,32 @@
 				<div id="inner-header" class="wrap">
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="header__top">
-						<div class="row text-center">
-							<div class="header__hotline visible-xs-inline visible-sm-inline">
-								<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
-							</div>
-						</div>
+						
+						<!--for mobile-->
 						<div class="row">
 							<div class="col-xs-8 col-md-6">
 								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
 							</div>
 							<div class="col-xs-4 col-md-6 text-right">
-								<!--for mobile-->
-								<a href="<?php echo home_url(); ?>" class="clearfix visible-xs-block">
+								<a href="<?php echo home_url(); ?>" class="visible-xs-inline visible-sm-inline">
 									<img class="header__language" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_cn.png">
 								</a>
-								<a href="#"  class="clearfix visible-xs-block">
+							</div>
+							<div class="col-xs-8 col-md-6">
+								<div class="header__hotline visible-xs-inline visible-sm-inline">
+									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+								</div>
+							</div>
+
+							<div class="col-xs-4 col-md-6 text-right">
+								<a href="#"  class="clearfix visible-xs-inline visible-sm-inline">
 									<div class="header__menu-icon js-nav-toggle">menu</div>
 								</a>
-								<!--end for mobile-->
-								<!--for desktop-->
+							</div>
+							<!--end for mobile-->
+							
+							<!--for desktop-->
+							<div class="col-xs-4 col-md-6 text-right">
 								<div class="header__right-top hidden-xs hidden-sm">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									<span class="header__right-top__language">

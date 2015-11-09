@@ -141,7 +141,7 @@ HEADER STYLES
 
 	.header__top{
 		background-color: $white;
-		padding-bottom: 10px;
+		// padding-bottom: 10px;
 	}
 	.header__hotline{
 		text-transform: uppercase;
@@ -151,6 +151,7 @@ HEADER STYLES
 		height: auto;
 		margin-top: 20px;
 		margin-left: 10px;
+		margin-bottom: 18px;
 		//padding: 25px 20px;
 	}
 	.header__language{
@@ -161,8 +162,8 @@ HEADER STYLES
 	}
 	.header__menu-icon{
 		@extend .purple-bg;
-		margin-right: 20px;
-		margin-top: 10px;
+		// margin-right: 20px;
+		// margin-top: 10px;
 		text-transform: uppercase;
 	}
 }
@@ -582,6 +583,7 @@ Maowei CUSTOM STYLES
 .slider-container{
 	margin-bottom: $gap;
 	width: 100%;
+	overflow: hidden;
 }
 .slider{
 	margin: 0 15px;
