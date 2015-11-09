@@ -701,12 +701,17 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+// first level nav
+.nav>li>a{
+	@include transition();
+}
 .nav {
 	border-bottom: 0;
 	margin: 0;
 	background-color: $menu-bg;
 	li {
 		text-align: center;
+
 		a {
 			display: block;
 			color: $primary;
@@ -717,7 +722,7 @@ and more scalable.
 			text-transform: uppercase;
 			display: inline-block;
 			margin: 0.3em 0;
-			@include transition();
+			//@include transition();
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -744,7 +749,10 @@ and more scalable.
 		*/
 		ul.sub-menu,
 		ul.children {
+			display: none;
 			visibility: hidden;
+			opacity: 0;
+			@include transition();
 			li {
 
 				a {
@@ -776,7 +784,8 @@ and more scalable.
 		a {
 		}
 	}
-	li.current-menu-item>a,li.current-page-item>a,li.current_page_ancestor>a{
+	// highlight submenu
+	li.current-menu-item>a,li.current-page-item>a,li.current_page_ancestor>a, li.current-menu-parent>a {
 		background-color: $primary;
 		color:$white;
 		text-decoration: none;

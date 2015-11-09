@@ -513,14 +513,13 @@ NAVIGATION STYLES
     /* line 273, ../scss/breakpoints/_768up.scss */
     .nav li ul.sub-menu,
     .nav li ul.children {
+      display: block;
       margin-top: 0;
-      border: 1px solid #ccc;
       border-top: 0;
       position: absolute;
       visibility: hidden;
-      z-index: 8999;
       /* highlight sub-menu current page */ }
-      /* line 281, ../scss/breakpoints/_768up.scss */
+      /* line 282, ../scss/breakpoints/_768up.scss */
       .nav li ul.sub-menu li,
       .nav li ul.children li {
         /*
@@ -528,50 +527,50 @@ NAVIGATION STYLES
         just remember deeper menus suck
         for usability. k, bai.
         */ }
-        /* line 283, ../scss/breakpoints/_768up.scss */
+        /* line 284, ../scss/breakpoints/_768up.scss */
         .nav li ul.sub-menu li a,
         .nav li ul.children li a {
           padding-left: 10px;
           border-right: 0;
           display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        /* line 300, ../scss/breakpoints/_768up.scss */
+          width: 180px; }
+        /* line 301, ../scss/breakpoints/_768up.scss */
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }
-        /* line 310, ../scss/breakpoints/_768up.scss */
+        /* line 311, ../scss/breakpoints/_768up.scss */
         .nav li ul.sub-menu li ul,
         .nav li ul.children li ul {
           top: 0;
           left: 100%; }
-    /* line 325, ../scss/breakpoints/_768up.scss */
+    /* line 326, ../scss/breakpoints/_768up.scss */
     .nav li:hover > ul {
       top: auto;
-      visibility: visible; }
+      visibility: visible;
+      opacity: 1; }
 
 /* end .nav */
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 345, ../scss/breakpoints/_768up.scss */
+/* line 347, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em; }
 
-/* line 349, ../scss/breakpoints/_768up.scss */
+/* line 351, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em; }
 
-/* line 354, ../scss/breakpoints/_768up.scss */
+/* line 356, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0; }
-  /* line 359, ../scss/breakpoints/_768up.scss */
+  /* line 361, ../scss/breakpoints/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */ }
-    /* line 367, ../scss/breakpoints/_768up.scss */
+    /* line 369, ../scss/breakpoints/_768up.scss */
     .widget ul li ul {
       margin-top: 0.75em;
       padding-left: 1em; }
@@ -590,7 +589,7 @@ SIDEBARS & ASIDES
 /*********************
 SINGLE STYLES
 *********************/
-/* line 468, ../scss/breakpoints/_768up.scss */
+/* line 470, ../scss/breakpoints/_768up.scss */
 .single-title {
   font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
   font-weight: lighter;
@@ -598,12 +597,12 @@ SINGLE STYLES
   margin-top: 0px;
   text-align: center; }
 
-/* line 475, ../scss/breakpoints/_768up.scss */
+/* line 477, ../scss/breakpoints/_768up.scss */
 .hentry header {
   border-color: #a9a3df;
   margin: 1.5em 1.5em 0; }
 
-/* line 480, ../scss/breakpoints/_768up.scss */
+/* line 482, ../scss/breakpoints/_768up.scss */
 .hentry footer {
   border-color: #a9a3df;
   margin: 1.5em 1.5em 0;
@@ -617,44 +616,44 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 498, ../scss/breakpoints/_768up.scss */
+/* line 500, ../scss/breakpoints/_768up.scss */
 .footer {
   clear: both;
   background-color: #9364cc;
   color: white; }
-  /* line 502, ../scss/breakpoints/_768up.scss */
+  /* line 504, ../scss/breakpoints/_768up.scss */
   .footer .footer-nav {
     margin-top: 10px;
     background-color: #9364cc; }
-    /* line 505, ../scss/breakpoints/_768up.scss */
+    /* line 507, ../scss/breakpoints/_768up.scss */
     .footer .footer-nav li {
       width: 49%;
       float: left;
       text-align: left;
       border-left: 1px solid white; }
-    /* line 511, ../scss/breakpoints/_768up.scss */
+    /* line 513, ../scss/breakpoints/_768up.scss */
     .footer .footer-nav a {
       font-size: 0.8em;
       color: white;
       margin: 0; }
-  /* line 517, ../scss/breakpoints/_768up.scss */
+  /* line 519, ../scss/breakpoints/_768up.scss */
   .footer .footer__logo {
     width: 158px;
     height: auto;
     margin: 10px 0; }
-  /* line 522, ../scss/breakpoints/_768up.scss */
+  /* line 524, ../scss/breakpoints/_768up.scss */
   .footer .footer__detail {
     text-align: left;
     border-left: 1px solid white;
     padding-left: 20px;
     font-size: 0.8em; }
-  /* line 528, ../scss/breakpoints/_768up.scss */
+  /* line 530, ../scss/breakpoints/_768up.scss */
   .footer .footer__copyright {
     font-size: 0.8em;
     margin-top: 60px;
     margin-bottom: 40px; }
 
-/* line 536, ../scss/breakpoints/_768up.scss */
+/* line 538, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
