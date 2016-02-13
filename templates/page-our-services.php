@@ -45,6 +45,7 @@
 												<?php the_field('title1'); ?>
 											</h2>
 											<?php the_field('caption1'); ?>
+											<?php check_more_url('url1'); ?>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
@@ -53,6 +54,7 @@
 												<?php the_field('title2'); ?>
 											</h2>
 											<?php the_field('caption2'); ?>
+											<?php check_more_url('url2'); ?>
 										</div>
 									</div>
 								</div>
@@ -63,6 +65,7 @@
 												<?php the_field('title3'); ?>
 											</h2>
 											<?php the_field('caption3'); ?>
+											<?php check_more_url('url3'); ?>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-6 bg-white js-full-height">
@@ -71,6 +74,7 @@
 												<?php the_field('title4'); ?>
 											</h2>
 											<?php the_field('caption4'); ?>
+											<?php check_more_url('url4'); ?>
 										</div>
 									</div>
 								</div>
@@ -81,6 +85,7 @@
 												<?php the_field('title5'); ?>
 											</h2>
 											<?php the_field('caption5'); ?>
+											<?php check_more_url('url5'); ?>
 										</div>
 									</div>
 								</div>
