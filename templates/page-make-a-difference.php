@@ -28,14 +28,20 @@
 												<?php the_title(); ?>
 											</h1>
 											<div class="divider"></div>
-											
+											<p>
+												<?php 
+													global $more; 
+													$more = 1;
+													the_content();
+												?>
+											</p>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-12 col-md-4">
 										<h2 class="temp__ptitle--serif">
-											Give
+											<?php the_field('give_title'); ?>
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-dark-purple">
@@ -51,7 +57,7 @@
 									</div>
 									<div class="col-xs-12 col-md-4">
 										<h2 class="temp__ptitle--serif">
-											donate
+											<?php the_field('donate_title'); ?>
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-red-purple">
@@ -65,7 +71,7 @@
 									</div>
 									<div class="col-xs-12 col-md-4">
 										<h2 class="temp__ptitle--serif">
-											Volunteer
+											<?php the_field('volunteer_title'); ?>
 										</h2>
 										<div class="gap-bottom-2 temp__box--color">
 											<div class="temp__box__caption bg-regular-purple">
