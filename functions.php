@@ -251,6 +251,25 @@ function get_the_twitter_excerpt(){
   return $the_str;
 }
 
+/**/
+function icl_post_languages(){
+  $languages = icl_get_languages();
+  if(1 < count($languages)){
+    foreach($languages as $l){
+      $langs[] = '<a href="'.$l['url'].'">'.$l['translated_name'].'</a>';
+    }
+    echo join(' / ', $langs);
+  }
+}
+
+function check_more_url($url){
+  $d = get_field($url);
+  if($d){
+    echo '<a href='.$d.'>click for more...</a>';
+  }
+}
+
+
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 

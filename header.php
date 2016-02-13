@@ -86,9 +86,13 @@
 								<div class="header__right-top hidden-xs hidden-sm">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									<span class="header__right-top__language">
-										<a href="#">EN</a> / 
-										<a href="#">中文</a>
+										<!-- <a href="#">EN</a> / 
+										<a href="#">中文</a> -->
+										<?php
+											icl_post_languages();
+										?>
 									</span>
+									
 									
 								</div>
 								<div class="header__right-bottom hidden-xs">

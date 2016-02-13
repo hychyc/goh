@@ -43,17 +43,17 @@
 								<div class="row bg-blue row-fix-hight">
 									<div class="col-xs-12 col-md-8 bg-pink">
 										<div class="col-md-6">
-											<h2 class="temp__ptitle">BOARD OF DIRECTORS</h2>
+											<h2 class="temp__ptitle"><?php the_field('title_board_of_directors'); ?></h2>
 											<?php the_field('board_of_directors'); ?>
 										</div>
 										<div class="col-md-6">
-											<h2 class="temp__ptitle">ADVISORY COMMITTEE</h2>
+											<h2 class="temp__ptitle"><?php the_field('title_advistory_committee'); ?></h2>
 											<?php the_field('advistory_committee'); ?>
 										</div>
 
 										<div class="col-md-12">
 											<h2 class="temp__ptitle">
-												EXECUTIVE DIRECTOR
+												<?php the_field('title_executive_director'); ?>
 											</h2>
 											<P class="temp__list--italic">
 												<?php the_field('executive_director'); ?>
@@ -61,7 +61,7 @@
 										</div>
 										<div class="col-md-12">
 											<div class="divider--left"></div>
-											<h2 class="temp__ptitle">EMPLOYMENT OPPORTUNITIES</h2>
+											<h2 class="temp__ptitle"><?php the_field('title_employment_opportunities'); ?></h2>
 											<?php the_field('employment_opportunities'); ?>
 											<a class="btn__more" href="#">
 												more
@@ -72,18 +72,18 @@
 									<div class="col-xs-12 col-md-4">
 										<div class="col-md-12">
 											<h2 class="temp__ptitle">
-												PUBLICATIONS 
+												<?php the_field('title_publication'); ?>
 											</h2>
 											<ul class="temp__list">
-												<li><a href="#">Newsletters</a></li>
-												<li><a href="#">Brochures</a></li>
-												<li><a href="#">Annual Reports</a></li>
+												<li><?php the_field('link_news_letter'); ?></li>
+												<li><?php the_field('link_brochures'); ?></li>
+												<li><?php the_field('link_annual_reports'); ?></li>
 											</ul>
 											<div class="divider--left"></div>
 										</div>
 										<div class="col-md-12">
 											<h2 class="temp__ptitle">
-												News
+												<?php the_field('title_news'); ?>
 											</h2>
 											<div class="temp__postlist">
 												<div class="temp__postlist__date">JUN 01, 2015</div>

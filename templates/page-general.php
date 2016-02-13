@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: YOU ARE NOT ALONE
+ Template Name: GENERAL
 */
 ?>
 
@@ -23,46 +23,24 @@
 								
 								<div class="row">
 									<div class="col-xs-12 gap-top-1 gap-bottom-1">
-										<div class="col-md-8 col-md-push-2 gap-bottom-2">
+										<div class="col-md-10 col-md-push-1 gap-bottom-2">
 											<h1 class="temp__header--center temp__header">
 												<?php the_title(); ?>
 											</h1>
-											<div class="divider--left visible-xs-block"></div>
-											<p>
-												<?php 
-													global $more; 
-													$more = 1;
-													the_content();
-												?>
-											</p>
+											<div class="divider"></div>
+											
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-md-12 bg-pink">
-										<div class="gap-bottom-2 col-md-12 text-center">
-											<h2 class="temp__ptitle--bold">
-												<?php the_field('confidential_label'); ?>
-											</h2>
-										</div>
-										<div class="gap-bottom-2 col-md-6 bg-dark-purple text-center">
-											<h2 class="temp__ptitle--white">
-												<?php the_field('chinese_hot_line_title'); ?>
-											</h2>
-											<a href="<?php the_field('chinese_hot_line_url'); ?>" class="temp__number">
-												<?php the_field('chinese_hot_line'); ?>
-											</a>
-										</div>
-										<div class="gap-bottom-2 col-md-6 bg-red-purple text-center">
-											<h2 class="temp__ptitle--white">
-												<?php the_field('nyc_hot_line_title'); ?>
-											</h2>
-											<a href="<?php the_field('nyc_hot_line_url'); ?>" class="temp__number">
-												<?php the_field('nyc_hot_line'); ?>
-											</a>
-										</div>
-									</div>
-									<div class="col-xs-12 col-md-12 gap-bottom-2 divider--full">
+									<div class="col-xs-12 col-md-10">
+										<p>
+											<?php 
+												global $more; 
+												$more = 1;
+												the_content();
+											?>
+										</p>
 									</div>
 								</div>
 								
