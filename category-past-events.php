@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap js-content">
 						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-<div class="row">
+							<div class="row">
 								<div class="col-xs-12 gap-top-1 gap-bottom-1">
 									<div class="col-md-8 col-md-push-2 gap-bottom-2">
 										<h1 class="temp__header--center temp__header">

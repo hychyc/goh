@@ -320,6 +320,8 @@ Maowei CUSTOM STYLES
 		.event-box__bottom__caption{
 			color:$regular;
 			width: 80%;
+			min-height: 50px;
+    		max-height: 100px;
 		}
 		.event-box__bottom__arrow{
 			width: 23px;
