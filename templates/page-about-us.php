@@ -83,25 +83,29 @@
 										</div>
 										<div class="col-md-12">
 											<h2 class="temp__ptitle">
-												<?php the_field('title_news'); ?>
+												NEWS
 											</h2>
-											<div class="temp__postlist">
-												<div class="temp__postlist__date">JUN 01, 2015</div>
-												<div class="temp__postlist__title">Lorem ipsum dolor si</div>
-												<p>
-													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum...
-												</p>
-												<div class="divider--left"></div>
-											</div>
-											<div class="temp__postlist">
-												<div class="temp__postlist__date">JUN 01, 2015</div>
-												<div class="temp__postlist__title">Lorem ipsum dolor si</div>
-												<p>
-													Lorem quis erat ac, praesent ligula odio pellentesque. Donec malesuada duis a sed neque rerum, nulla ut amet, et imperdiet quam sapien. Donec malesuada duis a sed neque rerum...
-												</p>
-												<div class="divider--left"></div>
-											</div>
-											<a href="#" class="btn__more">
+											<?php
+												global $post;
+												$myposts = get_posts('numberposts=3&offset=1&category=11');
+												foreach($myposts as $post) :
+											?>
+												
+												<div class="temp__postlist">
+													<div class="temp__postlist__date"><?php echo get_the_date() ?></div>
+													<div class="temp__postlist__title"><?php the_title(); ?></div>
+													<p class="event-box__bottom__caption">
+														<?php echo substr(get_the_excerpt(), 0,50); ?>
+													</p>
+													<a class="event-box__bottom" href="<?php the_permalink() ?>">more...
+													</a>
+													<div class="divider--left"></div>
+												</div>
+												
+											<?php endforeach; ?>
+											<?php wp_reset_query();?>
+											
+											<a href="http://gohny.org/goh/category/news/" class="btn__more">
 												<span>more</span>	
 												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
 											</a>
