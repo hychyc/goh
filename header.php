@@ -60,7 +60,7 @@
 						
 						<!--for mobile-->
 						<div class="row">
-							<div class="col-xs-8 col-md-6">
+							<div class="col-xs-4 col-md-5">
 								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
 							</div>
 							<div class="col-xs-4 col-md-6 text-right">
@@ -82,7 +82,7 @@
 							<!--end for mobile-->
 							
 							<!--for desktop-->
-							<div class="col-xs-4 col-md-6 text-right">
+							<div class="col-xs-8 col-md-7 text-right">
 								<div class="header__right-top hidden-xs hidden-sm">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									<span class="header__right-top__language">
@@ -93,18 +93,14 @@
 										?>
 									</span>
 									
-									
 								</div>
 								<div class="header__right-bottom hidden-xs">
-									<a href="#" class="donate purple-border hidden-sm">
-										<span>
-											<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
-										</span>
-										donate
-									</a>
 									<div class="header__hotline">
 										<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 									</div>	
+									<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate hidden-sm" target="_blank">
+										<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/donate_anime.gif">
+									</a>
 								</div>
 								<!--end for desktop-->
 							</div>
