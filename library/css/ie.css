@@ -269,7 +269,8 @@ HEADER STYLES
     padding-bottom: 10px; }
   .header .header__hotline {
     display: inline-block;
-    font-size: 1em; }
+    font-size: 1em;
+    vertical-align: bottom; }
   .header .header__logo {
     margin: 50px 0 10px 20px; }
   .header .header__right-top {
@@ -293,11 +294,11 @@ Maowei CUSTOM STYLES
 
 .donate {
   font-size: 1em;
-  margin-right: 10px; }
+  margin-left: 10px; }
 
 .background {
   position: absolute;
-  top: 750px;
+  top: 735px;
   width: 100%;
   height: 610px; }
   .background .background__left {
@@ -467,6 +468,7 @@ NAVIGATION STYLES
       /* highlight sub-menu current page */ }
       .nav li ul.sub-menu li,
       .nav li ul.children li {
+        padding: 0;
         /*
         if you need to go deeper, go nuts
         just remember deeper menus suck

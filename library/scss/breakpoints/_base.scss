@@ -180,7 +180,7 @@ Maowei CUSTOM STYLES
 	font-size: 1.2em;
 	color:$primary; 
 	.donate__icon{
-		width: 15px;
+		width: 250px;
 	}
 	@include transition();
 	&:hover, &:focus {
@@ -298,7 +298,7 @@ Maowei CUSTOM STYLES
 			margin: 0;
 			text-transform: uppercase;
 			
-			color: $primary;
+			color: #FFFFFF;
 			font-weight: 200;
 			width: 150px;
 			text-align: right;
@@ -725,7 +725,7 @@ and more scalable.
 			text-align: center;
 			text-transform: uppercase;
 			display: inline-block;
-			margin: 0.3em 0;
+			// margin: 0.3em 0;
 			//@include transition();
 			/*
 			remember this is for mobile ONLY, so there's no need

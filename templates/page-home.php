@@ -12,7 +12,7 @@
 					<div class="background__right"></div>
 					<img class="backgronud__diamond" style="top:130px" src="<?php echo get_template_directory_uri(); ?>/library/images/diamond@2x.png">
 					<img class="backgronud__diamond" style="top:260px" src="<?php echo get_template_directory_uri(); ?>/library/images/diamond@2x.png">
-					<img class="backgronud__diamond" style="top:390px" src="<?php echo get_template_directory_uri(); ?>/library/images/diamond@2x.png">
+
 				</div>
 				<div id="inner-content" class="wrap">
 
@@ -46,7 +46,7 @@
 									</a>
 								</div>
 								<div class="row block">
-									<div class="col-xs-12 col-md-6 col-md-push-6">
+									<div class="col-xs-12 col-md-12">
 										<div class="text-box text-box--goh">
 											<h1 class="text-box__title">
 												<?php the_title(); ?>
@@ -62,27 +62,27 @@
 									<div class="col-xs-12 text-center visible-xs-block">
 										<a href=""><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									</div>
-									<div class="col-xs-12  col-md-5 col-md-pull-6">
+									<!-- <div class="col-xs-12  col-md-5 col-md-pull-6">
 										<div class="media-box">
-											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png">
-											<a href="<?php echo get_page_link(9); ?>" class="media-box__title">
+											<img class="media-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/home-about-us.jpg">
+											<a href="</?php echo get_page_link(9); ?>" class="media-box__title">
 												about us
 											</a>
 										</div>
-									</div>
+									</div> -->
 									<div class="col-xs-12 col-md-5 col-md-push-7">
 										<div class="media-box">
-											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph02.png">
-											<a href="<?php echo get_page_link(15); ?>" class="media-box__title">
-												our service
+											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph03.png">
+											<a href="<?php echo get_page_link(21); ?>" class="media-box__title">
+												make a difference
 											</a>
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-5 col-md-pull-5">
 										<div class="media-box">
-											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph03.png">
-											<a href="<?php echo get_page_link(21); ?>" class="media-box__title">
-												make a difference
+											<img class="media-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/home-about-us.jpg">
+											<a href="<?php echo get_page_link(9); ?>" class="media-box__title">
+												about us
 											</a>
 										</div>
 									</div>
@@ -118,10 +118,7 @@
 									<?php wp_reset_query();?>
 									
 									<div class="col-xs-12 col-md-6 gap-top">
-										<a class="donate--large purple-border">
-											<span>
-												<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
-											</span>
+										<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate--large purple-border">
 											donate now to help
 										</a>
 									</div>
@@ -131,8 +128,12 @@
 									<div class="col-xs-12 col-md-12">
 										<div class="img-box text-center">
 											<div class="divider"></div>
-											<h1 class="img-box__title">events</h1>
-											<img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph02.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph03.png"><img class="img-box__img" src="<?php echo get_template_directory_uri(); ?>/library/images/ph01.png">
+											<!-- TAKK OFF EVENT SLIDER -->
+											<!-- <h1 class="img-box__title">events</h1>
+											<img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph01.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph02.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph03.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph01.png"> -->
+
+											<!-- ADD SPONSOR LOGO -->
+											
 										</div>
 									</div>
 									<div class="col-xs-12 col-md-6 col-md-push-3">

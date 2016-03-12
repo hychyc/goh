@@ -79,13 +79,62 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
-										<div class="gap-bottom-2 col-xs-12 ">
+									<div class="col-xs-12 col-md-6 bg-white js-full-height">
+										<div class="gap-bottom-2 col-xs-12">
 											<h2 class="temp__ptitle">
 												<?php the_field('title5'); ?>
 											</h2>
 											<?php the_field('caption5'); ?>
 											<?php check_more_url('url5'); ?>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
+											<h2 class="temp__ptitle">
+												<?php the_field('title6'); ?>
+											</h2>
+											<?php the_field('caption6'); ?>
+											<?php check_more_url('url6'); ?>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-md-6 bg-blue js-full-height">
+										<div class="gap-bottom-2 col-xs-12">
+											<h2 class="temp__ptitle">
+												<?php the_field('title7'); ?>
+											</h2>
+											<?php the_field('caption7'); ?>
+											<?php check_more_url('url7'); ?>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6 bg-white js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
+											<h2 class="temp__ptitle">
+												<?php the_field('title8'); ?>
+											</h2>
+											<?php the_field('caption8'); ?>
+											<?php check_more_url('url8'); ?>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-md-6 bg-white js-full-height">
+										<div class="gap-bottom-2 col-xs-12">
+											<h2 class="temp__ptitle">
+												<?php the_field('title9'); ?>
+											</h2>
+											<?php the_field('caption9'); ?>
+											<?php check_more_url('url9'); ?>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6 bg-pink js-full-height">
+										<div class="gap-bottom-2 col-xs-12 ">
+											<h2 class="temp__ptitle">
+												<?php the_field('title10'); ?>
+											</h2>
+											<?php the_field('caption10'); ?>
+											<?php check_more_url('url10'); ?>
 										</div>
 									</div>
 								</div>
