@@ -58,32 +58,32 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div class="header__top">
 						
-						<!--for mobile-->
+						
 						<div class="row">
-							<div class="col-xs-4 col-md-5">
-								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
-							</div>
-							<div class="col-xs-4 col-md-6 text-right">
-								<a href="<?php echo home_url(); ?>" class="visible-xs-inline visible-sm-inline">
-									<img class="header__language" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_cn.png">
-								</a>
-							</div>
-							<div class="col-xs-8 col-md-6">
-								<div class="header__hotline visible-xs-inline visible-sm-inline">
+							<!--for mobile-->
+							<div class="col-xs-12 col-md-12 visible-xs-inline visible-sm-inline text-center">
+								<div class="header__hotline">
 									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 								</div>
 							</div>
-
-							<div class="col-xs-4 col-md-6 text-right">
-								<a href="#"  class="clearfix visible-xs-inline visible-sm-inline">
+							<div class="col-xs-7 col-md-5">
+								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
+							</div>
+							<div class="col-xs-5 col-md-6 text-right visible-xs-inline visible-sm-inline">
+								<div class="header__language">	
+									<?php
+										icl_post_languages();
+									?>
+								</div>
+								<a href="#"  class="clearfix">
 									<div class="header__menu-icon js-nav-toggle">menu</div>
 								</a>
 							</div>
 							<!--end for mobile-->
 							
 							<!--for desktop-->
-							<div class="col-xs-8 col-md-7 text-right">
-								<div class="header__right-top hidden-xs hidden-sm">
+							<div class="col-md-7 text-right hidden-xs hidden-sm">
+								<div class="header__right-top">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
 									<span class="header__right-top__language">
 										<!-- <a href="#">EN</a> / 
@@ -94,11 +94,11 @@
 									</span>
 									
 								</div>
-								<div class="header__right-bottom hidden-xs">
+								<div class="header__right-bottom hidden-xs hidden-sm">
 									<div class="header__hotline">
 										<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
 									</div>	
-									<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate hidden-sm" target="_blank">
+									<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate" target="_blank">
 										<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/donate_anime.gif">
 									</a>
 								</div>

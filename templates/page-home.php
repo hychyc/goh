@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 			<div id="content" class="js-content">
-				<div class="background hidden-xs">
+				<div class="background hidden-xs hidden-sm">
 					<div class="background__left"></div>
 					<div class="background__right"></div>
 					<img class="backgronud__diamond" style="top:130px" src="<?php echo get_template_directory_uri(); ?>/library/images/diamond@2x.png">
