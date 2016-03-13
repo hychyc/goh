@@ -145,6 +145,7 @@ HEADER STYLES
 	}
 	.header__hotline{
 		text-transform: uppercase;
+		margin-left: 20px;
 	}
 	.header__logo{
 		width: 100%;
@@ -156,15 +157,17 @@ HEADER STYLES
 	.header__language{
 		width: auto;
 		height: auto;
-		margin-top: 10px;
+		margin-top: 30px;
+		margin-right: 10px;
 		margin-bottom: 10px;
+		font-size: 12px;
 		a{
 			color:$primary;
 		}
 	}
 	.header__menu-icon{
 		@extend .purple-bg;
-		// margin-right: 20px;
+		margin-right: 20px;
 		// margin-top: 10px;
 		text-transform: uppercase;
 	}
@@ -717,6 +720,8 @@ and more scalable.
 	background-color: $menu-bg;
 	li {
 		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
 
 		a {
 			display: block;
@@ -758,6 +763,7 @@ and more scalable.
 			display: none;
 			visibility: hidden;
 			opacity: 0;
+			background-color: #f7f7f7;
 			@include transition();
 			li {
 
@@ -1446,6 +1452,13 @@ view.
 
 	#inner-footer{
 		padding-top:30px;
+		padding-bottom:30px;
+	}
+}
+
+.footer-nav{
+	li{
+		margin:0px;
 	}
 }
 

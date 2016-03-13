@@ -61,20 +61,24 @@
 						
 						<div class="row">
 							<!--for mobile-->
-							<div class="col-xs-12 col-md-12 visible-xs-inline visible-sm-inline text-center">
-								<div class="header__hotline">
-									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
-								</div>
+							<div class="col-xs-9 col-md-5 visible-xs-inline visible-sm-inline text-center">
+							 	<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
 							</div>
-							<div class="col-xs-7 col-md-5">
-								<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
-							</div>
-							<div class="col-xs-5 col-md-6 text-right visible-xs-inline visible-sm-inline">
+
+							<div class="col-xs-3 col-md-5 text-right visible-xs-inline visible-sm-inline">
 								<div class="header__language">	
 									<?php
 										icl_post_languages();
 									?>
 								</div>
+							</div>
+							<div class="col-xs-9 col-md-5 visible-xs-inline visible-sm-inline">
+								<div class="header__hotline">
+									<span class="purple-bg">hotline</span><a class="purple-border" href="tel:18779908595">1877-990-8595</a>
+								</div>
+							</div>
+							<div class="col-xs-3 col-md-5 text-right visible-xs-inline visible-sm-inline">
+								
 								<a href="#"  class="clearfix">
 									<div class="header__menu-icon js-nav-toggle">menu</div>
 								</a>
@@ -82,6 +86,11 @@
 							<!--end for mobile-->
 							
 							<!--for desktop-->
+							<div class="col-xs-5 col-md-5 hidden-xs hidden-sm">
+							<div class="header__left-top">
+							 	<a href="<?php echo home_url(); ?>" ><img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.svg"></a>
+							</div>
+							</div>
 							<div class="col-md-7 text-right hidden-xs hidden-sm">
 								<div class="header__right-top">
 									<a href="#"><img class="icon-fb" src="<?php echo get_template_directory_uri(); ?>/library/images/FB@2x.png"></a>
