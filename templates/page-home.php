@@ -38,11 +38,8 @@
 									</div>
 								</div>
 								<div class="text-center visible-xs-block">
-									<a href="#" class="donate purple-border">
-										<span>
-											<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/icon_paypal@2x.png">
-										</span>
-										donate
+									<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate" target="_blank">
+										<img class="donate__icon" src="<?php echo get_template_directory_uri(); ?>/library/images/donate_anime.gif">
 									</a>
 								</div>
 								<div class="row block">
@@ -52,7 +49,7 @@
 												<?php the_title(); ?>
 											</h1>
 											<h2 class="text-box__subtitle">
-												紐約勵馨
+												紐約勵馨婦幼關懷中心
 											</h2>
 											<div class="text-box__caption">
 												<?php the_content(); ?>
