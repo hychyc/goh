@@ -114,14 +114,7 @@
 									<?php endforeach; ?>
 									<?php wp_reset_query();?>
 									
-									<div class="col-xs-12 col-md-6 gap-top">
-										<a href="http://www.nycharities.org/donate/charitydonate.asp?ID=2111" class="donate--large purple-border">
-											donate now to help
-										</a>
-									</div>
-									<div class="col-xs-12 col-md-6 gap-top">
-										<?php the_field('caption2'); ?><!-- doesn't show -->
-									</div>
+									
 									<div class="col-xs-12 col-md-12">
 										<div class="img-box text-center">
 											<div class="divider"></div>
