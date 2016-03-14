@@ -96,17 +96,16 @@
 													<div class="temp__postlist__title"><?php the_title(); ?></div>
 													<p class="event-box__bottom__caption">
 														<?php echo substr(get_the_excerpt(), 0,50); ?>
+														<a class="event-box__bottom more-btn" href="<?php the_permalink() ?>">...read more</a>
 													</p>
-													<a class="event-box__bottom" href="<?php the_permalink() ?>">more...
-													</a>
 													<div class="divider--left"></div>
 												</div>
 												
 											<?php endforeach; ?>
 											<?php wp_reset_query();?>
 											
-											<a href="http://gohny.org/goh/category/news/" class="btn__more">
-												<span>more</span>	
+											<a href="<? echo home_url(); ?>/category/news/" class="btn__more">
+												<span>more news</span>	
 												<span><img class="btn__more__arrow" src="<?php echo get_template_directory_uri(); ?>/library/images/linkArrow@2x.png"></span>
 											</a>
 										</div>

@@ -84,13 +84,13 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	//color: $link-color;
+	color: $link-color;
 	cursor: pointer;
 	display: inline-block;
 
 	/* on hover */
 	&:hover, &:focus {
-		//color: $link-hover;
+		color: $link-hover;
 	}
 
 	/* on click */
@@ -275,6 +275,10 @@ Maowei CUSTOM STYLES
 		font-size: 1.2em;
 		margin: 1em 0;
 	}
+}
+
+.more-btn{
+	font-weight:700;
 }
 .event-box{
 	padding: 0;

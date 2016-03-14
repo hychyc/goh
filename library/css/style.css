@@ -1032,11 +1032,14 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 a, a:visited {
+  color: #7f56c5;
   cursor: pointer;
   display: inline-block;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #673db1; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -1184,6 +1187,9 @@ Maowei CUSTOM STYLES
     text-transform: uppercase;
     font-size: 1.2em;
     margin: 1em 0; }
+
+.more-btn {
+  font-weight: 700; }
 
 .event-box {
   padding: 0;
