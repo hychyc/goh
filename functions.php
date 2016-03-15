@@ -265,7 +265,7 @@ function icl_post_languages(){
 function check_more_url($url){
   $d = get_field($url);
   if($d){
-    echo '<a href='.$d.'>click for more...</a>';
+    echo '<a href='.$d.'>Read more</a>';
   }
 }
 
