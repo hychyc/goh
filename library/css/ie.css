@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic);
 /******************************************************************
 Site Name:
 Author:
@@ -76,7 +77,6 @@ The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300italic);
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.
@@ -85,6 +85,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
+/* line 65, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -183,16 +184,20 @@ them in here, they won't work.
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
+/* line 33, ../scss/breakpoints/_481up.scss */
 .menu {
   /* end .menu ul */ }
+  /* line 34, ../scss/breakpoints/_481up.scss */
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
+    /* line 35, ../scss/breakpoints/_481up.scss */
     .menu ul li {
       /*
       plan your menus and drop-downs wisely.
       */ }
+      /* line 36, ../scss/breakpoints/_481up.scss */
       .menu ul li a {
         /*
         you can use hover styles here even though this size
@@ -206,23 +211,29 @@ POSTS & CONTENT STYLES
 /*********************
 HEADER STYLES
 *********************/
+/* line 84, ../scss/breakpoints/_481up.scss */
 .header .header__language {
   margin-top: 30px;
   margin-bottom: 10px; }
+  /* line 88, ../scss/breakpoints/_481up.scss */
   .header .header__language a {
     color: #7f56c5; }
 
 /* entry content */
+/* line 96, ../scss/breakpoints/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */ }
+  /* line 100, ../scss/breakpoints/_481up.scss */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left; }
+  /* line 105, ../scss/breakpoints/_481up.scss */
   .entry-content .alignright, .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right; }
+  /* line 110, ../scss/breakpoints/_481up.scss */
   .entry-content .aligncenter, .entry-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
@@ -254,12 +265,14 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+/* line 20, ../scss/breakpoints/_768up.scss */
 body {
   font-size: 14px; }
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
+/* line 28, ../scss/breakpoints/_768up.scss */
 .wrap {
   max-width: 960px;
   width: 760px; }
@@ -274,66 +287,82 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+/* line 12, ../scss/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px; }
 
 /*********************
 HEADER STYLES
 *********************/
+/* line 20, ../scss/breakpoints/_1030up.scss */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
   width: 100%; }
+  /* line 27, ../scss/breakpoints/_1030up.scss */
   .header .header__top {
-    background-color: #ffffff;
+    background-color: white;
     padding-bottom: 10px; }
+  /* line 31, ../scss/breakpoints/_1030up.scss */
   .header .header__hotline {
     display: inline-block;
     font-size: 1em;
     vertical-align: bottom; }
+  /* line 36, ../scss/breakpoints/_1030up.scss */
   .header .header__logo {
     margin: 50px 0 10px 20px; }
+  /* line 39, ../scss/breakpoints/_1030up.scss */
   .header .header__right-top {
     margin: 40px 20px 0 0; }
+    /* line 41, ../scss/breakpoints/_1030up.scss */
     .header .header__right-top a {
       color: #7f56c5; }
+    /* line 44, ../scss/breakpoints/_1030up.scss */
     .header .header__right-top .header__right-top__language {
       vertical-align: 10px;
       margin-left: 10px; }
+  /* line 49, ../scss/breakpoints/_1030up.scss */
   .header .header__right-bottom {
     margin-right: 20px; }
 
 /*********************
 Maowei CUSTOM STYLES
 *********************/
+/* line 59, ../scss/breakpoints/_1030up.scss */
 .row-fix-hight {
   overflow: hidden; }
+  /* line 61, ../scss/breakpoints/_1030up.scss */
   .row-fix-hight [class*="col-"] {
     margin-bottom: -99999px;
     padding-bottom: 99999px; }
 
+/* line 67, ../scss/breakpoints/_1030up.scss */
 .donate {
   font-size: 1em;
   margin-left: 10px; }
 
+/* line 71, ../scss/breakpoints/_1030up.scss */
 .background {
   position: absolute;
   top: 800px;
   width: 100%;
   height: 610px; }
+  /* line 76, ../scss/breakpoints/_1030up.scss */
   .background .background__left {
     position: absolute;
     width: 50%;
     height: 100%;
     background-color: #f0f5ff; }
+  /* line 82, ../scss/breakpoints/_1030up.scss */
   .background .background__right {
     position: absolute;
     width: 50%;
     height: 100%;
     left: 50%;
     background-color: #ffebf3; }
+  /* line 89, ../scss/breakpoints/_1030up.scss */
   .background .backgronud__diamond {
     position: absolute;
     left: 50%;
@@ -341,6 +370,7 @@ Maowei CUSTOM STYLES
     height: auto;
     margin-left: -15px; }
 
+/* line 97, ../scss/breakpoints/_1030up.scss */
 .background__top {
   position: absolute;
   width: 100%;
@@ -348,28 +378,35 @@ Maowei CUSTOM STYLES
   top: 400px;
   background-color: #f0f5ff; }
 
+/* line 104, ../scss/breakpoints/_1030up.scss */
 .background__bottom {
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: 300px;
   top: 800px;
   background-color: #ffebf3; }
 
+/* line 111, ../scss/breakpoints/_1030up.scss */
 .hotline--large {
   font-size: 1em; }
 
+/* line 120, ../scss/breakpoints/_1030up.scss */
 .media-box {
   margin-bottom: 65px; }
+  /* line 122, ../scss/breakpoints/_1030up.scss */
   .media-box .media-box__title {
     font-size: 1em; }
 
+/* line 130, ../scss/breakpoints/_1030up.scss */
 .event-box .event-box__top .event-box__top__date {
   font-size: 2.4em; }
+/* line 135, ../scss/breakpoints/_1030up.scss */
 .event-box .event-box__bottom .event-box__bottom__title {
   font-size: 1.8em;
   height: 27px;
   overflow: hidden; }
 
+/* line 142, ../scss/breakpoints/_1030up.scss */
 .event-content {
   -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
@@ -385,27 +422,35 @@ Maowei CUSTOM STYLES
   padding: 20px 0;
   border-bottom: 30px #7947a5 solid; }
 
+/* line 153, ../scss/breakpoints/_1030up.scss */
 .full-box {
   padding-top: 31%; }
+  /* line 156, ../scss/breakpoints/_1030up.scss */
   .full-box .full-box__title {
     font-size: 2.5em;
     font-weight: 300; }
+  /* line 160, ../scss/breakpoints/_1030up.scss */
   .full-box .full-box__date {
     font-size: 1.5em;
     font-weight: 300; }
 
+/* line 165, ../scss/breakpoints/_1030up.scss */
 .img-box {
   text-align: center; }
+  /* line 167, ../scss/breakpoints/_1030up.scss */
   .img-box .img-box__title {
     font-size: 1.8em; }
+  /* line 170, ../scss/breakpoints/_1030up.scss */
   .img-box .img-box__img {
     width: 25%; }
 
+/* line 175, ../scss/breakpoints/_1030up.scss */
 .temp__header {
   font-size: 4.28em;
   margin-top: 80px;
   text-align: left; }
 
+/* line 180, ../scss/breakpoints/_1030up.scss */
 .temp__header--center {
   font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
   font-weight: lighter;
@@ -413,32 +458,41 @@ Maowei CUSTOM STYLES
   margin-top: 40px;
   text-align: center; }
 
+/* line 187, ../scss/breakpoints/_1030up.scss */
 .temp__box {
   padding-bottom: 36px; }
 
+/* line 191, ../scss/breakpoints/_1030up.scss */
 .slider-container {
   overflow: visible; }
 
+/* line 195, ../scss/breakpoints/_1030up.scss */
 .slick-dots {
-  display: block !important;
+  display: block!important;
   bottom: 0px; }
 
+/* line 199, ../scss/breakpoints/_1030up.scss */
 .slider {
   margin: 0 auto;
   max-width: 810px; }
 
+/* line 204, ../scss/breakpoints/_1030up.scss */
 .slick-list {
   height: 300px; }
 
+/* line 209, ../scss/breakpoints/_1030up.scss */
 .push-top {
   margin-top: -50%; }
 
+/* line 212, ../scss/breakpoints/_1030up.scss */
 .divider--left {
   margin: 30px 0; }
 
+/* line 216, ../scss/breakpoints/_1030up.scss */
 .js-top {
   float: right; }
 
+/* line 219, ../scss/breakpoints/_1030up.scss */
 .js-nav {
   visibility: visible;
   opacity: 1;
@@ -451,18 +505,22 @@ Maowei CUSTOM STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
+/* line 228, ../scss/breakpoints/_1030up.scss */
 .top-nav {
   text-align: center; }
 
+/* line 232, ../scss/breakpoints/_1030up.scss */
 .nav {
   border: 0;
-  background-color: #ffffff;
+  background-color: white;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
+  /* line 235, ../scss/breakpoints/_1030up.scss */
   .nav ul {
-    background: #ffffff;
+    background: white;
     margin-top: 0; }
+  /* line 239, ../scss/breakpoints/_1030up.scss */
   .nav li {
     display: inline-block;
     position: relative;
@@ -472,6 +530,7 @@ NAVIGATION STYLES
     plan your menus and drop-downs wisely.
     */
     /* showing sub-menus */ }
+    /* line 244, ../scss/breakpoints/_1030up.scss */
     .nav li a {
       border-bottom: 0;
       font-size: 1em;
@@ -479,8 +538,10 @@ NAVIGATION STYLES
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
+      /* line 251, ../scss/breakpoints/_1030up.scss */
       .nav li a:hover, .nav li a:focus {
-        color: #ffffff; }
+        color: white; }
+    /* line 264, ../scss/breakpoints/_1030up.scss */
     .nav li ul.sub-menu,
     .nav li ul.children {
       display: block;
@@ -489,6 +550,7 @@ NAVIGATION STYLES
       position: absolute;
       visibility: hidden;
       /* highlight sub-menu current page */ }
+      /* line 273, ../scss/breakpoints/_1030up.scss */
       .nav li ul.sub-menu li,
       .nav li ul.children li {
         padding: 0;
@@ -497,19 +559,23 @@ NAVIGATION STYLES
         just remember deeper menus suck
         for usability. k, bai.
         */ }
+        /* line 275, ../scss/breakpoints/_1030up.scss */
         .nav li ul.sub-menu li a,
         .nav li ul.children li a {
           padding-left: 10px;
           border-right: 0;
           display: block;
           width: 180px; }
+        /* line 292, ../scss/breakpoints/_1030up.scss */
         .nav li ul.sub-menu li:last-child a,
         .nav li ul.children li:last-child a {
           border-bottom: 0; }
+        /* line 302, ../scss/breakpoints/_1030up.scss */
         .nav li ul.sub-menu li ul,
         .nav li ul.children li ul {
           top: 0;
           left: 100%; }
+    /* line 317, ../scss/breakpoints/_1030up.scss */
     .nav li:hover > ul {
       top: auto;
       visibility: visible;
@@ -519,19 +585,24 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+/* line 339, ../scss/breakpoints/_1030up.scss */
 .sidebar {
   margin-top: 2.2em; }
 
+/* line 343, ../scss/breakpoints/_1030up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em; }
 
+/* line 348, ../scss/breakpoints/_1030up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0; }
+  /* line 353, ../scss/breakpoints/_1030up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */ }
+    /* line 361, ../scss/breakpoints/_1030up.scss */
     .widget ul li ul {
       margin-top: 0.75em;
       padding-left: 1em; }
@@ -550,6 +621,7 @@ SIDEBARS & ASIDES
 /*********************
 SINGLE STYLES
 *********************/
+/* line 462, ../scss/breakpoints/_1030up.scss */
 .single-title {
   font-family: "Playfair Display", "Georgia", Cambria, Times New Roman, Times, serif;
   font-weight: lighter;
@@ -557,10 +629,12 @@ SINGLE STYLES
   margin-top: 0px;
   text-align: center; }
 
+/* line 469, ../scss/breakpoints/_1030up.scss */
 .hentry header {
   border-color: #a9a3df;
   margin: 1.5em 1.5em 0; }
 
+/* line 474, ../scss/breakpoints/_1030up.scss */
 .hentry footer {
   border-color: #a9a3df;
   margin: 1.5em 1.5em 0;
@@ -574,36 +648,44 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+/* line 492, ../scss/breakpoints/_1030up.scss */
 .footer {
   clear: both;
   background-color: #9364cc;
-  color: #ffffff; }
+  color: white; }
+  /* line 496, ../scss/breakpoints/_1030up.scss */
   .footer .footer-nav {
     margin-top: 10px;
     background-color: #9364cc; }
+    /* line 499, ../scss/breakpoints/_1030up.scss */
     .footer .footer-nav li {
       width: 49%;
       float: left;
       text-align: left;
-      border-left: 1px solid #ffffff; }
+      border-left: 1px solid white; }
+    /* line 505, ../scss/breakpoints/_1030up.scss */
     .footer .footer-nav a {
       font-size: 0.8em;
-      color: #ffffff;
+      color: white;
       margin: 0; }
+  /* line 511, ../scss/breakpoints/_1030up.scss */
   .footer .footer__logo {
     width: 158px;
     height: auto;
     margin: 10px 0; }
+  /* line 516, ../scss/breakpoints/_1030up.scss */
   .footer .footer__detail {
     text-align: left;
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid white;
     padding-left: 20px;
     font-size: 0.8em; }
+  /* line 522, ../scss/breakpoints/_1030up.scss */
   .footer .footer__copyright {
     font-size: 0.8em;
     margin-top: 60px;
     margin-bottom: 40px; }
 
+/* line 530, ../scss/breakpoints/_1030up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
