@@ -117,7 +117,7 @@
 									
 									<div class="col-xs-12 col-md-12">
 										<div class="img-box text-center">
-											<div class="divider"></div>
+											<!-- <div class="divider"></div> -->
 											<!-- TAKK OFF EVENT SLIDER -->
 											<!-- <h1 class="img-box__title">events</h1>
 											<img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph01.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph02.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph03.png"><img class="img-box__img" src="</?php echo get_template_directory_uri(); ?>/library/images/ph01.png"> -->
@@ -132,6 +132,21 @@
 										</a>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-xs-12 text-center">
+										<div class="divider"></div>
+										<a href="<?php the_permalink()?>/donors-acknowledgement/">DONORS ACKNOWLEDGEMENT</a>
+									</div>		
+								</div>
+
+								<div class="row">
+									<div class="col-xs-12 text-center">
+											<img class="sponsor-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/home-sponsor-logo01.jpg">
+											<img class="sponsor-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/home-sponsor-logo02.jpg">
+											<img class="sponsor-logo" src="<?php echo get_template_directory_uri(); ?>/library/images/home-sponsor-logo03.jpg">
+									</div>
+								</div>
+								
 								<div class="row">
 									<div class="col-xs-12 text-center">
 										<img class="top-arrow js-top" src="<?php echo get_template_directory_uri(); ?>/library/images/goTopBtn@2x.png">

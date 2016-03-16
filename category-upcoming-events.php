@@ -71,7 +71,7 @@
 											$category_link = get_category_link( $category_id );
 										?>
 											<div class="col-xs-12 text-center">
-												<a class="purple-bg btn--purple" href="<?php echo $category_link?>">view archive</a>
+												<a class="btn--archive btn--purple purple-border" href="<?php echo $category_link?>">view archive</a>
 											</div>
 									</div>
 									<div class="divider--full"></div>

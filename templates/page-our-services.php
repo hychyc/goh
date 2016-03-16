@@ -23,7 +23,7 @@
 								
 								<div class="row">
 									<div class="col-xs-12 gap-top-1 gap-bottom-1">
-										<div class="col-md-8 col-md-push-2 gap-bottom-2">
+										<div class="col-md-10 col-md-push-1 gap-bottom-2">
 											<h1 class="temp__header--center temp__header">
 												<?php the_title(); ?>
 											</h1>

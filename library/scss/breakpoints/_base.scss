@@ -594,6 +594,14 @@ Maowei CUSTOM STYLES
 	}
 }
 
+.btn--archive{
+		&:hover, &:focus {
+		text-decoration: none;
+		color:#ffffff !important;
+	}
+
+}
+
 //slideshow
 .slider-container{
 	margin-bottom: $gap;
