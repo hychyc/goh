@@ -85,23 +85,20 @@
 											<h2 class="temp__ptitle">
 												NEWS
 											</h2>
-											<?php
-												global $post;
-												$myposts = get_posts('numberposts=3&offset=1&category=11');
-												foreach($myposts as $post) :
-											?>
+											
+											<?php query_posts('posts_per_page=3&category=11'); ?>
+												<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 												
-												<div class="temp__postlist">
-													<div class="temp__postlist__date"><?php echo get_the_date() ?></div>
-													<div class="temp__postlist__title"><?php the_title(); ?></div>
-													<p class="event-box__bottom__caption">
-														<?php echo substr(get_the_excerpt(), 0,50); ?>
-														<a class="event-box__bottom more-btn" href="<?php the_permalink() ?>">...read more</a>
-													</p>
-													<div class="divider--left"></div>
-												</div>
-												
-											<?php endforeach; ?>
+													<div class="temp__postlist">
+														<div class="temp__postlist__date"><?php echo get_the_date() ?></div>
+														<div class="temp__postlist__title"><?php the_title(); ?></div>
+														<p class="event-box__bottom__caption">
+															<?php echo substr(get_the_excerpt(), 0,50); ?>
+															<a class="event-box__bottom more-btn" href="<?php the_permalink() ?>">...read more</a>
+														</p>
+														<div class="divider--left"></div>
+													</div>
+												<?php endwhile; endif; ?>	
 											<?php wp_reset_query();?>
 											
 											<a href="<? echo home_url(); ?>/category/news/" class="btn__more">
